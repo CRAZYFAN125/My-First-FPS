@@ -12,6 +12,7 @@ public class MenuScript : MonoBehaviour
     {
         PlayerPrefs.SetInt("CONF", 0);
         sliderText.text = string.Empty;
+	PlayerPrefs.SetInt("Wether",0);
     }
     public void ActiveReConfig(bool x)
     {
@@ -28,6 +29,18 @@ public class MenuScript : MonoBehaviour
                 break;
         }
     }
+
+public void SetDayTime(bool x){
+switch(x){
+	case true:
+		PlayerPrefs.SetInt("Wether",1);
+		break;
+	case false:
+		PlayerPrefs.SetInt("Wether",0);
+		break;
+}
+}
+
     public void ReConfigGenerator(float _i)
     {
         int i = Mathf.FloorToInt(_i);

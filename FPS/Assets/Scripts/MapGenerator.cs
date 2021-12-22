@@ -1,21 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MapGenerator : MonoBehaviour
 {
     Mesh mesh;
 
+    public NavMeshSurface surface;
+
     Vector3[] vertices;
     int[] triangles;
 
-    [HideInInspector]public int xSize = 20;
+    [HideInInspector] public int xSize = 20;
     [HideInInspector] public int zSize = 20;
     public GameObject ObjectToSpawn;
     Transform MCamera;
     public Quaternion q;
     [HideInInspector] public static bool Ready = false;
     public float secondsTimeWait = .1f;
+    public int EnemyCount = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -34,19 +38,41 @@ public class MapGenerator : MonoBehaviour
         MCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
         Vector3 vector = new Vector3(-(xSize / 2), 0, -(zSize / 2));
         gameObject.transform.position = vector;
-        MCamera.position = vector+new Vector3(-3,10,-3);
+        MCamera.position = vector + new Vector3(-3, 10, -3);
         MCamera.rotation = q;
-        
-        
+
+
 
         StartCoroutine(CreateShape());
 
     }
     private void FixedUpdate()
     {
-        if (Ready) return;
-        UpdateMesh();
+        if (!Ready)
+        {
+            UpdateMesh(); return;
+        }
+        int enCount = 0;
+        GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject item in enemys)
+        {
+            enCount += 1;
+        }
+        if (enCount<EnemyCount)
+        {
+            Spawn();
+        }
         //GameObject.FindGameObjectWithTag("Player").transform.rotation = new Quaternion(0.0001f, Mathf.LerpAngle(0, 360, 600f), 0, 0);
+    }
+    void Spawn()
+    {
+        for (int i = 0; i < Mathf.FloorToInt(/*vertices.Length*/ (xSize / 10f)); i++)
+        {
+            int C = Mathf.FloorToInt(Random.Range(1, vertices.Length));
+            GameObject g = Instantiate(ObjectToSpawn, vertices[C] - new Vector3(xSize / 2, -2f, zSize / 2), Quaternion.identity, gameObject.transform);
+            g.name += " " + C;
+            g.SetActive(true);
+        }
     }
     IEnumerator CreateShape()
     {
@@ -80,8 +106,9 @@ public class MapGenerator : MonoBehaviour
             }
             vert++;
         }
+        surface.BuildNavMesh();
         List<int> Data = new List<int>();
-        for (int i = 0; i < Mathf.FloorToInt(vertices.Length / (xSize * 1.5f)); i++)
+        for (int i = 0; i < Mathf.FloorToInt(/*vertices.Length*/ (xSize / 10f)); i++)
         {
             int C = Mathf.FloorToInt(Random.Range(1, vertices.Length));
             int[] datas = Data.ToArray();
@@ -98,7 +125,7 @@ public class MapGenerator : MonoBehaviour
             {
                 try
                 {
-                    GameObject g =Instantiate(ObjectToSpawn, vertices[C]- new Vector3(xSize/2,.2f,zSize/2), Quaternion.identity, gameObject.transform);
+                    GameObject g = Instantiate(ObjectToSpawn, vertices[C] - new Vector3(xSize / 2, -2f, zSize / 2), Quaternion.identity, gameObject.transform);
                     g.name += " " + C;
                     g.SetActive(true);
                     Data.Add(C);
@@ -114,7 +141,8 @@ public class MapGenerator : MonoBehaviour
         MCamera.rotation = Quaternion.identity;
         Ready = true;
         GetComponent<MeshCollider>().sharedMesh = mesh;
-
+        EnemyCount = Data.Count;
+        
     }
 
     public void StartTest()
