@@ -33,7 +33,7 @@ public class Player_GUI : MonoBehaviour
 
     public void ChangedDevice(PlayerInput input)
     {
-        text.text = "\n Aktywowano " + input.controlsChangedEvent.ToString();
+        text.text = "\n Aktywowano " + input.currentControlScheme;
     }
 
     void Update()

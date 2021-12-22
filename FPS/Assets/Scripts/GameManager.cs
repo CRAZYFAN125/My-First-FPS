@@ -83,9 +83,9 @@ public class GameManager : MonoBehaviour
 
     public void Reload()
     {
-        if (ammo<5)
+        if (ammo<startAmmo)
         {
-            ammo += 1;
+            ammo += .5f ;
         }
     }
     public void Damage(float amount)
@@ -97,7 +97,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
+    public Transform player;
     private void Awake()
     {
         if (instance!=null)
@@ -106,5 +106,33 @@ public class GameManager : MonoBehaviour
         }
         instance = this;
         startAmmo = ammo;
+        
+    }
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+    private void FixedUpdate()
+    {
+        if (player.position.y <= -10)
+        {
+            StartCoroutine(Killer());
+        }
+    }
+    IEnumerator Killer()
+    {
+        while (playerHealh>1)
+        {
+            Damage(0.22f);
+            yield return new WaitForSeconds(0.5f);
+        }
+    }
+
+    public void ResetGame(InputAction.CallbackContext callbackContext)
+    {
+        if (callbackContext.performed)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        }
     }
 }

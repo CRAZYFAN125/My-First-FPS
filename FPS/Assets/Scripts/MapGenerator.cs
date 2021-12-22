@@ -5,6 +5,12 @@ using UnityEngine.AI;
 
 public class MapGenerator : MonoBehaviour
 {
+    [System.Serializable]
+    public class SpawnRate
+    {
+        public GameObject @object;
+        public float Szansa;
+    }
     Mesh mesh;
 
     public NavMeshSurface surface;
@@ -15,6 +21,7 @@ public class MapGenerator : MonoBehaviour
     [HideInInspector] public int xSize = 20;
     [HideInInspector] public int zSize = 20;
     public GameObject ObjectToSpawn;
+    public SpawnRate[] Spawns;
     Transform MCamera;
     public Quaternion q;
     [HideInInspector] public static bool Ready = false;
@@ -58,7 +65,7 @@ public class MapGenerator : MonoBehaviour
         {
             enCount += 1;
         }
-        if (enCount<EnemyCount)
+        if (enCount < EnemyCount)
         {
             Spawn();
         }
@@ -66,10 +73,22 @@ public class MapGenerator : MonoBehaviour
     }
     void Spawn()
     {
+        float r = Random.Range(10, 100);
+        float xxx = 1000;
+        GameObject obj = ObjectToSpawn;
+
+        foreach (SpawnRate item in Spawns)
+        {
+            if (Mathf.Abs(r - item.Szansa) < xxx)
+            {
+                xxx = r - item.Szansa;
+                obj = item.@object;
+            }
+        }
         for (int i = 0; i < Mathf.FloorToInt(/*vertices.Length*/ (xSize / 10f)); i++)
         {
             int C = Mathf.FloorToInt(Random.Range(1, vertices.Length));
-            GameObject g = Instantiate(ObjectToSpawn, vertices[C] - new Vector3(xSize / 2, -2f, zSize / 2), Quaternion.identity, gameObject.transform);
+            GameObject g = Instantiate(obj, vertices[C] - new Vector3(xSize / 2, -2f, zSize / 2), Quaternion.identity, gameObject.transform);
             g.name += " " + C;
             g.SetActive(true);
         }
@@ -142,7 +161,7 @@ public class MapGenerator : MonoBehaviour
         Ready = true;
         GetComponent<MeshCollider>().sharedMesh = mesh;
         EnemyCount = Data.Count;
-        
+
     }
 
     public void StartTest()
