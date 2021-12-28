@@ -31,6 +31,7 @@ public class MapGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         mesh = new Mesh();
         mesh.name = "CustomMesh";
         GetComponent<MeshFilter>().mesh = mesh;
@@ -79,9 +80,11 @@ public class MapGenerator : MonoBehaviour
 
         foreach (SpawnRate item in Spawns)
         {
-            if (Mathf.Abs(r - item.Szansa) < xxx)
+            float d = Mathf.Abs(r - item.Szansa);
+            Debug.Log(d);
+            if (d < xxx)
             {
-                xxx = r - item.Szansa;
+                xxx = d;
                 obj = item.@object;
             }
         }
@@ -91,6 +94,7 @@ public class MapGenerator : MonoBehaviour
             GameObject g = Instantiate(obj, vertices[C] - new Vector3(xSize / 2, -2f, zSize / 2), Quaternion.identity, gameObject.transform);
             g.name += " " + C;
             g.SetActive(true);
+            Debug.Log(r+" "+xxx);
         }
     }
     IEnumerator CreateShape()

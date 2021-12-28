@@ -5,16 +5,32 @@ using UnityEngine.InputSystem;
 
 public class Gun : MonoBehaviour
 {
-    public float damage = 10f;
-    public float range = 40f;
+    public enum GunType
+    {
+        Normal,
+        Bomb,
+        Medicine
+    }
+    public GunType type;
     public Camera fpsCam;
-    public float ammoWep = 0.25f;
+    //Weapon normal
+    [HideInInspector] public float damage = 10f;
+    [HideInInspector] public float range = 40f;
+    [HideInInspector] public float ammoWep = 0.25f;
+    [HideInInspector] public GameObject particles;
 
+    //Heal capsule
+    [HideInInspector] public float Heal;
+    [HideInInspector] public Animator animator;
+    Quaternion MedRot;
+
+    //Granade
+    [HideInInspector]public GameObject Spawn;
 
     //public float fireRate = 15f;
     //float WaitTime = 0;
 
-    public GameObject particles;
+    
     //public Transform pPoint;
     //public Transform Player;
 
@@ -43,32 +59,54 @@ public class Gun : MonoBehaviour
     }
     public void Shoot()
     {
-        
-            if (GameManager.instance.ammo<=0&&GameManager.instance.ammo - ammoWep <0)
-            {
-                return;
-            }
-            GameManager.instance.ammo -= ammoWep;
-            StartCoroutine(Particle());
-            //Shooted = true;
-
-            //particleS.gameObject.SetActive(true);
-            //particleS.Play();
-            //Instantiate(particles, pPoint.position, Player.localRotation);
-
-            RaycastHit hit;
-            if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
-            {
-                Target target = hit.transform.GetComponent<Target>();
-                if (target != null)
+        switch (type)
+        {
+            case GunType.Normal:
+                if (/*GameManager.instance.ammo<=0f&&*/GameManager.instance.ammo - ammoWep >= 0f)
                 {
-                    target.TakeDamage(damage);
-                    Debug.Log(hit.transform.name);
-                }
-            }
-            
-        
 
+
+
+                    GameManager.instance.ammo -= ammoWep;
+                    StartCoroutine(Particle());
+                    //Shooted = true;
+
+                    //particleS.gameObject.SetActive(true);
+                    //particleS.Play();
+                    //Instantiate(particles, pPoint.position, Player.localRotation);
+
+                    RaycastHit hit;
+                    if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+                    {
+                        Target target = hit.transform.GetComponent<Target>();
+                        if (target != null)
+                        {
+                            target.TakeDamage(damage);
+                            Debug.Log(hit.transform.name);
+                        }
+                    }
+
+                }
+                break;
+            case GunType.Bomb:
+                Debug.Log("Bomb!");
+                break;
+            case GunType.Medicine:
+                GameManager.instance.Heal(Heal);
+                if (animator!=null) animator.SetTrigger("Heal");
+                break;
+        }
+    }
+    private void Start()
+    {
+        MedRot = gameObject.transform.rotation;
+    }
+    private void OnEnable()
+    {
+        if (type == GunType.Medicine)
+        {
+            gameObject.transform.rotation = MedRot;
+        }
     }
     IEnumerator Particle()
     {

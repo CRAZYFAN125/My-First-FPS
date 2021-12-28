@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 
     public void ChangeGuns(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && MapGenerator.Ready)
         {
             if (context.ReadValue<float>()>0)
             {
@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
 
     public void Shoot(InputAction.CallbackContext callback)
     {
-        if (callback.performed&&!realoding)
+        if (callback.performed&&!realoding&&MapGenerator.Ready)
         {
             guns[gunI].GetComponent<Gun>().Shoot();
         }
@@ -83,7 +83,11 @@ public class GameManager : MonoBehaviour
 
     public void Reload()
     {
-        if (ammo<startAmmo)
+        if (ammo+.5f > 1 && MapGenerator.Ready)
+        {
+            ammo = 1f;
+        }
+        else if (ammo<startAmmo && MapGenerator.Ready)
         {
             ammo += .5f ;
         }
@@ -132,7 +136,25 @@ public class GameManager : MonoBehaviour
     {
         if (callbackContext.performed)
         {
+            MapGenerator.Ready = false;
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
+    }
+
+    public void Heal(float _amount)
+    {
+        if (ammo <=.9f)
+        {
+            return;
+        }
+        if (playerHealh+_amount>1f)
+        {
+            playerHealh = 1f;
+        }
+        else
+        {
+            playerHealh += _amount;
+        }
+        ammo = 0;
     }
 }

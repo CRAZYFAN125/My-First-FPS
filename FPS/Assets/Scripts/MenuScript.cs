@@ -23,6 +23,7 @@ public class MenuScript : MonoBehaviour
         float value = PlayerPrefs.GetFloat("Sensi");
         SensivityText.text = value.ToString();
         SensivitySlider.value = value;
+        Cursor.lockState = CursorLockMode.None;
 
         if (Gamepad.current!=null)
         {
