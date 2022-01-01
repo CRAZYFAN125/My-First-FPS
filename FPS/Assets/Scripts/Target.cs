@@ -6,8 +6,14 @@ public class Target : MonoBehaviour
 {
     public float health = 50f;
     float T = 0;
+    public bool IsScore = true;
     public Enemy enemy;
+    public float MaxHealth { get; private set; }
 
+    private void Start()
+    {
+        MaxHealth = health;
+    }
 
     public void TakeDamage(float amount)
     {
@@ -20,6 +26,10 @@ public class Target : MonoBehaviour
     void Die()
     {
         GameManager.instance.Reload();
+        if (IsScore)
+        {
+            GameManager.instance.Killed += 1;
+        }
         Destroy(gameObject, 0.25f);
     }
     private void FixedUpdate()

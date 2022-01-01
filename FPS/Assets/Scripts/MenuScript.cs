@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class MenuScript : MonoBehaviour
 {
+    public Text GameJoltLog;
     public Toggle toggle;
     public Slider slider;
     public Toggle Time;
@@ -30,15 +31,17 @@ public class MenuScript : MonoBehaviour
             ControlsMenu.text = string.Empty;
             ControlsMenu.text += Gamepad.current.displayName;
             Gamepad gp = Gamepad.current;
-            ControlsMenu.text += "\n\nGamepad Buttons\n\nMenu\n\nActive Custom Map: North Button\n\nSet Custom Map value: Right Stick\n\nDeactive Time: East Button\n\nStart: Start";
+            ControlsMenu.text += "\n\nGamepad Buttons\n\nMenu\n\nActive Custom Map: North Button\n\nSet Custom Map value: Right Stick\n\nDeactive Time: East Button\n\nShow Leadboards: Select\n\nStart: Start";
             ControlsGame.text += "\n\nGamepad Buttons\n\nGame\n\nJump: South Button\n\nMove: Left Stick\n\nLook: Right Stick\n\nShoot: Right Trigger\n\nChange Weapon: D-Pad Y\n\nReload: Right Bumper/Shoulder";
         }
         else
         {
             ControlsMenu.text = string.Empty;
-            ControlsMenu.text += "\nMenu\n\nActive Custom Map: Space\n\nSet Custom Map value: Scroll\n\nDeactive Time: Control\n\nStart: Enter";
+            ControlsMenu.text += "\nMenu\n\nActive Custom Map: Space\n\nSet Custom Map value: Scroll\n\nDeactive Time: Control\n\nShow Leadboards: Right Shift\n\nStart: Enter";
             ControlsGame.text += "\nGame\n\nJump: Space\n\nMove: WSAD\n\nLook: Mouse Move\n\nShoot: Right Mouse Button\n\nChange Weapon: Scroll\n\nReload: Left Mouse Button";
         }
+
+        InvokeRepeating("IsLog", 2f, 1f);
     }
     public void ActiveReConfig(bool x)
     {
@@ -55,7 +58,20 @@ public class MenuScript : MonoBehaviour
                 break;
         }
     }
-
+    public void IsLog()
+    {
+        if (GameJoltLog != null)
+        {
+            if (GameJolt.API.GameJoltAPI.Instance.HasSignedInUser)
+            {
+                GameJoltLog.text = "Log out";
+            }
+            else
+            {
+                GameJoltLog.text = "Log in";
+            }
+        }
+    }
     public void SetSensivity(float value)
     {
         value = Mathf.FloorToInt(value);
@@ -73,6 +89,18 @@ public class MenuScript : MonoBehaviour
             case false:
                 PlayerPrefs.SetInt("Wether", 0);
                 break;
+        }
+    }
+
+    public void LogIn()
+    {
+        if (GameJolt.UI.GameJoltUI.Instance!=null&&GameJolt.API.GameJoltAPI.Instance.CurrentUser==null)
+        {
+            GameJolt.UI.GameJoltUI.Instance.ShowSignIn();
+        }
+        else if (GameJolt.API.GameJoltAPI.Instance.CurrentUser != null)
+        {
+            GameJolt.API.GameJoltAPI.Instance.CurrentUser.SignOut();
         }
     }
 
@@ -134,6 +162,18 @@ public class MenuScript : MonoBehaviour
             SetDayTime(Time.isOn);
         }
     }
+
+    public void OpenLeadboard(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if (GameJolt.UI.GameJoltUI.Instance!=null)
+            {
+                GameJolt.UI.GameJoltUI.Instance.ShowLeaderboards();
+            }
+        }
+    }
+
     public void StartIt(InputAction.CallbackContext context)
     {
         if (context.performed)

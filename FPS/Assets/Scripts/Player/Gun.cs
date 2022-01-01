@@ -89,7 +89,24 @@ public class Gun : MonoBehaviour
                 }
                 break;
             case GunType.Bomb:
-                Debug.Log("Bomb!");
+                GameObject Spawned = Instantiate(Spawn, transform.position,Quaternion.identity);
+                Granade granade = Spawned.GetComponent<Granade>();
+                Vector3 v = fpsCam.transform.forward;
+                /*
+                v.x = Mathf.Clamp01(v.x);
+                v.y = Mathf.Clamp01(v.y);
+                v.z = Mathf.Clamp01(v.z);
+                */
+
+                if (granade != null)
+                {
+                    granade.GranadeThrow(v);
+                }
+                else
+                {
+                    granade = Spawned.AddComponent<Granade>();
+                    granade.GranadeThrow(v);
+                }
                 break;
             case GunType.Medicine:
                 GameManager.instance.Heal(Heal);
