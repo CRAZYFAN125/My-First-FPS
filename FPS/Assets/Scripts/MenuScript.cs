@@ -1,10 +1,12 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using System.IO;
+using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.InputSystem;
-
+using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour
 {
+    [SerializeField] private AudioMixer audioSettings;
     public Text GameJoltLog;
     public Toggle toggle;
     public Slider slider;
@@ -26,7 +28,7 @@ public class MenuScript : MonoBehaviour
         SensivitySlider.value = value;
         Cursor.lockState = CursorLockMode.None;
 
-        if (Gamepad.current!=null)
+        if (Gamepad.current != null)
         {
             ControlsMenu.text = string.Empty;
             ControlsMenu.text += Gamepad.current.displayName;
@@ -42,6 +44,41 @@ public class MenuScript : MonoBehaviour
         }
 
         InvokeRepeating("IsLog", 2f, 1f);
+
+        if (!File.Exists(Application.dataPath + "/../Audio.txt"))
+        {
+            audioSettings.SetFloat("Volume", 0f);
+            float x = 0f;
+            File.WriteAllText(Application.dataPath + "/../Audio.txt", x.ToString());
+        }
+        else
+        {
+            try
+            {
+                float ABc = float.Parse(File.ReadAllText(Application.dataPath + "/../Audio.txt"));
+                if (ABc >= -80f && ABc <= 20)
+                {
+                    audioSettings.SetFloat("Volume", ABc);
+                }
+                else if (ABc >= -80f)
+                {
+                    audioSettings.SetFloat("Volume", -80);
+                    File.WriteAllText(Application.dataPath + "/../Audio.txt", "-80");
+                }
+                else
+                {
+                    audioSettings.SetFloat("Volume", 20);
+                    File.WriteAllText(Application.dataPath + "/../Audio.txt", "20");
+                }
+            }
+            catch
+            {
+                audioSettings.SetFloat("Volume", 0f);
+                float x = 0f;
+                File.WriteAllText(Application.dataPath + "/../Audio.txt", x.ToString());
+            }
+        }
+
     }
     public void ActiveReConfig(bool x)
     {
@@ -94,7 +131,7 @@ public class MenuScript : MonoBehaviour
 
     public void LogIn()
     {
-        if (GameJolt.UI.GameJoltUI.Instance!=null&&GameJolt.API.GameJoltAPI.Instance.CurrentUser==null)
+        if (GameJolt.UI.GameJoltUI.Instance != null && GameJolt.API.GameJoltAPI.Instance.CurrentUser == null)
         {
             GameJolt.UI.GameJoltUI.Instance.ShowSignIn();
         }
@@ -122,7 +159,7 @@ public class MenuScript : MonoBehaviour
     {
         if (context.performed)
         {
-            toggle.isOn= !toggle.isOn;
+            toggle.isOn = !toggle.isOn;
             ActiveReConfig(toggle.isOn);
         }
     }
@@ -130,9 +167,9 @@ public class MenuScript : MonoBehaviour
     {
         if (context.performed && toggle.isOn)
         {
-            float x =Mathf.Clamp( context.ReadValue<float>(),-.75f,.75f);
+            float x = Mathf.Clamp(context.ReadValue<float>(), -.75f, .75f);
             x = slider.value + x;
-            if (x<slider.minValue||x>slider.maxValue)
+            if (x < slider.minValue || x > slider.maxValue)
             {
                 return;
             }
@@ -158,7 +195,7 @@ public class MenuScript : MonoBehaviour
     {
         if (context.performed)
         {
-            Time.isOn= !Time.isOn;
+            Time.isOn = !Time.isOn;
             SetDayTime(Time.isOn);
         }
     }
@@ -167,7 +204,7 @@ public class MenuScript : MonoBehaviour
     {
         if (context.performed)
         {
-            if (GameJolt.UI.GameJoltUI.Instance!=null)
+            if (GameJolt.UI.GameJoltUI.Instance != null)
             {
                 GameJolt.UI.GameJoltUI.Instance.ShowLeaderboards();
             }
