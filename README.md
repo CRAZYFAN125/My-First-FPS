@@ -47,3 +47,6 @@ Chow Chow|5%|5
 Medicine|100%|n/a
 
 >> While enemy have 40hp.
+
+
+I made a music, you can download it from [GameJolt](https://gamejolt.com/games/fps-first_personal_shooter/676618)
