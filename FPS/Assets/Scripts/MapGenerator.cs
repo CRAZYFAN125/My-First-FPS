@@ -15,8 +15,9 @@ public class MapGenerator : MonoBehaviour
 
     public NavMeshSurface surface;
 
-    Vector3[] vertices;
+    [HideInInspector]public Vector3[] vertices;
     int[] triangles;
+
 
     [HideInInspector] public int xSize = 20;
     [HideInInspector] public int zSize = 20;
