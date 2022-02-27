@@ -114,17 +114,18 @@ public class Gun : MonoBehaviour
                 break;
         }
     }
-    private void Start()
+    public void GetRotation()
     {
         MedRot = gameObject.transform.rotation;
     }
-    private void OnEnable()
-    {
-        if (type == GunType.Medicine)
-        {
-            gameObject.transform.rotation = MedRot;
-        }
-    }
+    //private void OnEnable()
+    //{
+    //    if (type == GunType.Medicine)
+    //    {
+    //        gameObject.transform.rotation = MedRot;
+    //    }
+    //}
+    public void HealBugNaprawiacz() { transform.rotation = MedRot; }
     IEnumerator Particle()
     {
         int i = 0;

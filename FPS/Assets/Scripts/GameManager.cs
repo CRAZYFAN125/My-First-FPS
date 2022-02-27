@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public float playerHealh = 25f;
     public float ammo = 5f;
     float startAmmo;
+    [SerializeField] Gun Medicine;
+    public bool isSprinting { get; private set; } = false;
 
     int gunI = 0, gunN = 0;
 
@@ -58,6 +60,19 @@ public class GameManager : MonoBehaviour
             gunN = gunI;
         }
     }
+
+    public void Sprint(InputAction.CallbackContext callbackContext)
+    {
+        if (callbackContext.performed && !isSprinting)
+        {
+            isSprinting = true;
+        }
+        else if (callbackContext.canceled && isSprinting)
+        {
+            isSprinting = false;
+        }
+    }
+
     bool realoding = false;
     public void Reloads(InputAction.CallbackContext context)
     {
@@ -126,7 +141,7 @@ public class GameManager : MonoBehaviour
             {
                 int scoreValue = Killed; // The actual score.
                 string scoreText = $"{Killed} killed"; // A string representing the score to be shown on the website.
-                GameJolt.API.Scores.Add(scoreValue, scoreText,"Quest", tableID, extraData, (bool success) => {
+                GameJolt.API.Scores.Add(scoreValue, scoreText,"Niezalogowany", tableID, extraData, (bool success) => {
                     switch (success)
                     {
                         case true:
@@ -153,6 +168,12 @@ public class GameManager : MonoBehaviour
         }
         instance = this;
         startAmmo = ammo;
+        if (Medicine != null)
+        {
+             Medicine.gameObject.SetActive(true);
+             Medicine.GetRotation();
+             Medicine.gameObject.SetActive(false);
+        }
         
     }
     private void Start()

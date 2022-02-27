@@ -10,6 +10,9 @@ public class PlayerControler : MonoBehaviour
     public CharacterController controller;
 
     public float speed = 12f;
+    private float normalSpeed = 0;
+    private float sprint = 24f;
+    public float sprintDamageAmount = 2f;
     Vector3 velocity;
     public float gravity = -10f;
 
@@ -21,7 +24,11 @@ public class PlayerControler : MonoBehaviour
 
     float x = 0;
     float z = 0;
-
+    private void Start()
+    {
+        normalSpeed = speed;
+        sprint = speed*1.5f;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -32,7 +39,15 @@ public class PlayerControler : MonoBehaviour
             velocity.y = -2f;
         }
 
-        
+        if (GameManager.instance.isSprinting)
+        {
+            speed = sprint;
+            GameManager.instance.Damage(sprintDamageAmount * Time.deltaTime);
+        }
+        else
+        {
+            speed = normalSpeed;
+        }
         
         Vector3 move = transform.right * x + transform.forward * z;
 

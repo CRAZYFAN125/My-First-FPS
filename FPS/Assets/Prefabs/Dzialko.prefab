@@ -126,6 +126,8 @@ GameObject:
   - component: {fileID: 1365798418133818796}
   - component: {fileID: 3823764050814757222}
   - component: {fileID: 187827414937823540}
+  - component: {fileID: 2915224740183319679}
+  - component: {fileID: 2822385036006644623}
   m_Layer: 0
   m_Name: Dzialko
   m_TagString: Untagged
@@ -219,3 +221,32 @@ MonoBehaviour:
   Ammo: 10
   partToRotate: {fileID: 8490649798236137056}
   rotationSpeed: 10
+--- !u!208 &2915224740183319679
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3319224759087483059}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.75, y: 1.3, z: 0.75}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.016, z: -0.016}
+  m_TimeToStationary: 0.5
+--- !u!65 &2822385036006644623
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3319224759087483059}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.5223913, z: 1.0027604}
+  m_Center: {x: 0, y: 0.24405055, z: -0.015764594}
