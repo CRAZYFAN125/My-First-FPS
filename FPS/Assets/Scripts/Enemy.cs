@@ -7,15 +7,22 @@ public class Enemy : MonoBehaviour
     private Transform player;
     public NavMeshAgent agent;
     public float Force = 0.2f;
+    Material material;
+    Target target;
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
     }
     private void Start()
     {
+        target = GetComponent<Target>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        material = new Material(GetComponent<MeshRenderer>().material);
+        material.SetFloat("_MLife", target.MaxHealth);
+        GetComponent<MeshRenderer>().material=material;
     }
-    // Update is called once per frame
+    
+
     void FixedUpdate()
     {
         if (!MapGenerator.Ready)
@@ -31,7 +38,7 @@ public class Enemy : MonoBehaviour
         {
             agent.speed = 1;
         }
-
+        material.SetFloat("_life", target.health);
     }
 
     

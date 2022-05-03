@@ -1,0 +1,26 @@
+﻿<Window x:Name="Launcher" x:Class="FPS_Launcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FPS_Launcher"
+        mc:Ignorable="d"
+        Title="FPS Luancher" Height="450" Width="720
+        " ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Cursor="Cross">
+    <Grid>
+        <Image Source="/FPS_Thumbnail-Main.png" RenderTransformOrigin="0,0" Margin="0,0,0,0" Width="850"/>
+        <Button x:Name="PlayButton" Content="Guzik" HorizontalAlignment="Center" Margin="0,345,0,0" VerticalAlignment="Top" Height="41" Width="108" FontWeight="Bold" FontSize="16" Click="PlayButton_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Red"/>
+                    <GradientStop Color="#FFE8FF00" Offset="0.5"/>
+                    <GradientStop Color="#FF37FF00" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="Nazwa_Gry" Content="FPS Launcher" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Foreground="White" FontSize="36" FontWeight="Bold" FontFamily="Viner Hand ITC" Height="94" Width="344" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="VersionText" Content="0.0.0" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Normal" FontWeight="Heavy" FontSize="16" Width="168" UseLayoutRounding="False" Foreground="White" FontFamily="Castellar" Height="66" Margin="542,358,0,0" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Right"/>
+
+
+    </Grid>
+</Window>

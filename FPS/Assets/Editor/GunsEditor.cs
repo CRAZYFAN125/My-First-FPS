@@ -25,6 +25,9 @@ public class GunsEditor : Editor
                 gun.animator = (Animator)EditorGUILayout.ObjectField("Animator",gun.animator,typeof(Animator),true);
                 gun.Heal = EditorGUILayout.Knob(new Vector2(125, 75), gun.Heal, .01f, 1f, "Heals", Color.black, Color.blue, true);
                 break;
+            case Gun.GunType.Custom:
+                GUILayout.Label("Add script with IGun interface to work!");
+                break;
             default:
                 Debug.Log(gun.type + " was not defined in GunsEditor.cs");
                 break;

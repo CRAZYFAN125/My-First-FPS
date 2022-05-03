@@ -9,7 +9,8 @@ public class Gun : MonoBehaviour
     {
         Normal,
         Bomb,
-        Medicine
+        Medicine,
+        Custom
     }
     public GunType type;
     public Camera fpsCam;
@@ -27,10 +28,12 @@ public class Gun : MonoBehaviour
     //Granade
     [HideInInspector]public GameObject Spawn;
 
+    IGun gun;
+
     //public float fireRate = 15f;
     //float WaitTime = 0;
 
-    
+
     //public Transform pPoint;
     //public Transform Player;
 
@@ -39,6 +42,22 @@ public class Gun : MonoBehaviour
     //bool Shooted = false;
     //bool set = false;
     // Update is called once per frame
+
+    private void Start()
+    {
+        if (type==GunType.Custom)
+        {
+            gun=gameObject.GetComponent<IGun>();
+            if (gun != null)
+            {
+                gun.SetDatas(fpsCam);
+            }
+            else
+            {
+                Debug.LogError("Custom gun script is not atached! Please repair it!");
+            }
+        }
+    }
     void Update()
     {
         //if (Shooted&&set)
@@ -64,9 +83,6 @@ public class Gun : MonoBehaviour
             case GunType.Normal:
                 if (/*GameManager.instance.ammo<=0f&&*/GameManager.instance.ammo - ammoWep >= 0f)
                 {
-
-
-
                     GameManager.instance.ammo -= ammoWep;
                     StartCoroutine(Particle());
                     //Shooted = true;
@@ -111,6 +127,9 @@ public class Gun : MonoBehaviour
             case GunType.Medicine:
                 GameManager.instance.Heal(Heal);
                 if (animator!=null) animator.SetTrigger("Heal");
+                break;
+            case GunType.Custom:
+                gun.OnShoot();
                 break;
         }
     }

@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     float startAmmo;
     [SerializeField] Gun Medicine;
     public bool isSprinting { get; private set; } = false;
+    public bool canReload = true;
 
     int gunI = 0, gunN = 0;
 
@@ -30,7 +31,7 @@ public class GameManager : MonoBehaviour
 
     public void ChangeGuns(InputAction.CallbackContext context)
     {
-        if (context.performed && MapGenerator.Ready)
+        if (context.performed && MapGenerator.Ready&&canReload)
         {
             if (context.ReadValue<float>()>0)
             {
@@ -76,7 +77,7 @@ public class GameManager : MonoBehaviour
     bool realoding = false;
     public void Reloads(InputAction.CallbackContext context)
     {
-        if (!realoding && context.performed)
+        if (!realoding && context.performed&&canReload)
         {
             realoding = true;
             StartCoroutine(Reloader());
