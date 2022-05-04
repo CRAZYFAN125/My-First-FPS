@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:FPS_Launcher"
         mc:Ignorable="d"
         Title="FPS Luancher" Height="450" Width="720
-        " ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Cursor="Cross">
+        " ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Cursor="Cross" ContentRendered="OnWindowRendered">
     <Grid>
         <Image Source="/FPS_Thumbnail-Main.png" RenderTransformOrigin="0,0" Margin="0,0,0,0" Width="850"/>
-        <Button x:Name="PlayButton" Content="Guzik" HorizontalAlignment="Center" Margin="0,345,0,0" VerticalAlignment="Top" Height="41" Width="108" FontWeight="Bold" FontSize="16" Click="PlayButton_Click">
+        <Button x:Name="PlayButton" Content="Guzik" HorizontalAlignment="Center" Margin="0,345,0,0" VerticalAlignment="Top" Height="41" Width="208" FontWeight="Bold" FontSize="16" Click="PlayButton_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Red"/>
