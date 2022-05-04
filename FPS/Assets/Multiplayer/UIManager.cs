@@ -25,6 +25,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject connectUI;
     [SerializeField] private InputField usernameField;
 
+    private void Awake()
+    {
+        Singleton = this;
+    }
     public void ConnectClicked()
     {
         usernameField.interactable = false;
@@ -40,8 +44,15 @@ public class UIManager : MonoBehaviour
 
     public void SendName()
     {
-        Message message = Message.Create(MessageSendMode.reliable,(ushort)ClientToServerId.name);
-        message.AddString(usernameField.text);
-        NetworkManager.Singleton.Client.Send(message);
+        try
+        {
+            Message message = Message.Create(MessageSendMode.reliable, ClientToServerId.name);
+            message.AddString(usernameField.text);
+            NetworkManager.Singleton.Client.Send(message);
+        }
+        catch(System.Exception e)
+        {
+            Debug.LogError(e.Message);
+        }
     }
 }

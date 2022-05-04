@@ -6,12 +6,14 @@ using UnityEngine;
 public enum ServerToClientId : ushort
 {
     playerSpawned = 1,
+    playerMovement,
 }
 
 
 enum ClientToServerId:ushort
 {
     name = 1,
+    input,
 }
 
 public class NetworkManager : MonoBehaviour
@@ -48,6 +50,7 @@ public class NetworkManager : MonoBehaviour
         Client = new Client();
         Client.Connected += DidConnect;
         Client.ConnectionFailed += FailedToConnect;
+        Client.ClientDisconnected += PlayerLeft;
         Client.Disconnected += DidDisconnect;
     }
 
@@ -66,10 +69,15 @@ public class NetworkManager : MonoBehaviour
         Client.Connect($"{ip}:{port}");
     }
 
+    private void PlayerLeft(object sender, ClientDisconnectedEventArgs e)
+    {
+        if (PlayerMulti.list.TryGetValue(e.Id, out PlayerMulti player))
+            Destroy(player.gameObject);
+    }
+
     private void DidConnect(object sender, EventArgs e)
     {
         UIManager.Singleton.SendName();
-
     }
 
     private void FailedToConnect(object sender, EventArgs e)
