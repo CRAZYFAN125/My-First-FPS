@@ -36,6 +36,15 @@ This weapon deals both little damage and consumes little ammo.
 Like any medicine, it has its value, replenishing health by as much as 10%, but taking all ammunition. Well, what more can we say? 
 > You want medicine, get out of the money ...
 
+##### Laser Gun
+
+This Plasma Laser will meltdown enemys to their dead.
+
+
+##### Auto Cannon
+It is a momentary cannon that fires at the closest enemy, dealing 1.5 damage to enemies, unfortunately it fires a maximum of 10 bullets...
+
+
 #### Similitude
 
 Item|Ammo|Atacks
@@ -45,8 +54,10 @@ Granade|85%|1/3 of live
 Rocket|25%|15
 Chow Chow|5%|5
 Medicine|100%|n/a
+LaserGun|4%/sec|4.5/sec
 
 >> While enemy have 40hp.
+
 
 
 I made a music, you can download it from [GameJolt](https://gamejolt.com/games/fps-first_personal_shooter/676618)

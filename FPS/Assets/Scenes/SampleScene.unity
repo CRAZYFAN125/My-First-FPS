@@ -3657,9 +3657,9 @@ MonoBehaviour:
   ObjectToSpawn: {fileID: 110362994}
   Spawns:
   - object: {fileID: 110362994}
-    Szansa: 49
+    Szansa: 47
   - object: {fileID: 1888560537}
-    Szansa: 50
+    Szansa: 53
   - object: {fileID: 1487857343}
     Szansa: 55
   q: {x: 0.18419176, y: 0.3750031, z: -0.07629524, w: 0.90533143}
