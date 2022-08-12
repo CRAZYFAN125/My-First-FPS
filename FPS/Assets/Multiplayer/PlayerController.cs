@@ -43,12 +43,13 @@ public class PlayerController : MonoBehaviour
 
     #region Messages
 
-    private void SendInput()
+    public void SendInput()
     {
         Message message = Message.Create(MessageSendMode.unreliable, ClientToServerId.input);
         message.AddBools(inputs,false);
         message.AddVector3(camTransform.forward);
         NetworkManager.Singleton.Client.Send(message);
+        print($"Sended {camTransform.forward}");
     }
 
     #endregion

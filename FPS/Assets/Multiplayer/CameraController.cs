@@ -22,7 +22,7 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         verticalRotation = transform.localEulerAngles.x;
-        horizontalRotation = transform.localEulerAngles.y;
+        horizontalRotation = player.transform.eulerAngles.y;
     }
 
     private void Update()
@@ -39,7 +39,7 @@ public class CameraController : MonoBehaviour
     }
     private void ToggleCursor()
     {
-        Cursor.visible = !Cursor.visible;
+        //Cursor.visible = !Cursor.visible;
 
         if (Cursor.lockState==CursorLockMode.None)
             Cursor.lockState = CursorLockMode.Locked;
@@ -49,9 +49,9 @@ public class CameraController : MonoBehaviour
     }
     private void Look()
     {
-    Vector2 mouse = Vector2.zero;
+        Vector2 mouse = Vector2.zero;
         mouse.y = -Input.GetAxis("Mouse Y");
-        mouse.x = -Input.GetAxis("Mouse X");
+        mouse.x = Input.GetAxis("Mouse X");
 
         verticalRotation = mouse.y*sensivity*Time.deltaTime;
         horizontalRotation = mouse.x*sensivity*Time.deltaTime;
@@ -60,6 +60,7 @@ public class CameraController : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
         player.transform.rotation = Quaternion.Euler(0f, horizontalRotation, 0f);
+        player.gameObject.GetComponent<PlayerController>().SendInput();
     }
 
 

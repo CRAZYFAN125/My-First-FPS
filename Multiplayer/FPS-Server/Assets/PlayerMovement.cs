@@ -97,4 +97,10 @@ public class PlayerMovement : MonoBehaviour
         message.AddVector3(camProxy.forward);
         NetworkManager.Singleton.Server.SendToAll(message);
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(transform.position, transform.forward);
+    }
 }
