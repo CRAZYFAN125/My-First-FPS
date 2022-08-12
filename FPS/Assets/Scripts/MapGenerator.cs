@@ -9,15 +9,17 @@ public class MapGenerator : MonoBehaviour
     public class SpawnRate
     {
         public GameObject @object;
-        public float Szansa;
+        [Range(0, 1)] public float Szansa;
+        [HideInInspector] public float SzansaMin;
+        [HideInInspector] public float SzansaMax;
     }
+    float chance;
     Mesh mesh;
 
     public NavMeshSurface surface;
 
-    [HideInInspector]public Vector3[] vertices;
+    [HideInInspector] public Vector3[] vertices;
     int[] triangles;
-
 
     [HideInInspector] public int xSize = 20;
     [HideInInspector] public int zSize = 20;
@@ -32,7 +34,14 @@ public class MapGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        chance = 100/Spawns.Length;
+
+        foreach (SpawnRate item in Spawns)
+        {
+            item.SzansaMin = item.Szansa*100;
+            item.SzansaMax = (item.Szansa*chance)*100;
+        }
+
         mesh = new Mesh();
         mesh.name = "CustomMesh";
         GetComponent<MeshFilter>().mesh = mesh;
@@ -75,27 +84,26 @@ public class MapGenerator : MonoBehaviour
     }
     void Spawn()
     {
-        float r = Random.Range(10, 100);
+        float r = Random.Range(1, 100);
         float xxx = 1000;
         GameObject obj = ObjectToSpawn;
 
         foreach (SpawnRate item in Spawns)
         {
-            float d = Mathf.Abs(r - item.Szansa);
-            Debug.Log(d);
-            if (d < xxx)
+            print(item.SzansaMin + " | " + item.SzansaMax);
+            if (r>=item.SzansaMin&&r<=item.SzansaMax)
             {
-                xxx = d;
                 obj = item.@object;
             }
         }
+
         for (int i = 0; i < Mathf.FloorToInt(/*vertices.Length*/ (xSize / 10f)); i++)
         {
             int C = Mathf.FloorToInt(Random.Range(1, vertices.Length));
             GameObject g = Instantiate(obj, vertices[C] - new Vector3(xSize / 2, -2f, zSize / 2), Quaternion.identity, gameObject.transform);
             g.name += " " + C;
             g.SetActive(true);
-            Debug.Log(r+" "+xxx);
+            Debug.Log(r + " " + xxx);
         }
     }
     IEnumerator CreateShape()
