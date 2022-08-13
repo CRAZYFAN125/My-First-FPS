@@ -31,6 +31,9 @@ public class MapGenerator : MonoBehaviour
     public float secondsTimeWait = .1f;
     public int EnemyCount = 0;
 
+    [SerializeField] GameObject Shooter;
+    int fala = 5;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -105,6 +108,19 @@ public class MapGenerator : MonoBehaviour
             g.SetActive(true);
             Debug.Log(r + " " + xxx);
         }
+
+        int cache = fala % 5;
+        if (cache==0)
+        {
+            int C = Mathf.FloorToInt(Random.Range(1, vertices.Length));
+            GameObject g = Instantiate(Shooter, vertices[C] - new Vector3(xSize / 2, -2f, zSize / 2), Quaternion.identity, gameObject.transform);
+            g.name += " " + C;
+            g.SetActive(true);
+            Debug.Log("Special");
+        }
+        fala++;
+
+        print(fala + "-Fala  Reszta po podzieleniu na 5-" + /*fala % 5*/cache);
     }
     IEnumerator CreateShape()
     {
@@ -244,6 +260,16 @@ public class MapGenerator : MonoBehaviour
         mesh.vertices = vertices;
         mesh.triangles = triangles;
         mesh.RecalculateNormals();
+    }
+
+    public Vector3[] GetFirstAndLastPoint()
+    {
+        Vector3[] v = new Vector3[2];
+
+        v[0] = vertices[0];
+        v[1] = vertices[vertices.Length - 1];
+
+        return v;
     }
 
     private void OnDrawGizmos()
