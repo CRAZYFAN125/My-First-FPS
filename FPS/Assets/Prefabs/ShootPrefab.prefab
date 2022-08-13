@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4588620067501007952}
   - component: {fileID: 4563485662271668747}
   - component: {fileID: -7183277179556664209}
+  - component: {fileID: -8093280239358038938}
   m_Layer: 0
   m_Name: ShootPrefab
   m_TagString: Untagged
@@ -129,3 +130,17 @@ MonoBehaviour:
   health: 1
   IsScore: 1
   enemy: {fileID: 0}
+--- !u!64 &-8093280239358038938
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5116657911061871462}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3128972952337770156, guid: 981f658ed359e244aace663a3706ce01, type: 3}

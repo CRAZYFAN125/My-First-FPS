@@ -222,4 +222,44 @@ public class GameManager : MonoBehaviour
         }
         ammo = 0;
     }
+
+    private void OnApplicationQuit()
+    {
+        if (GameJolt.API.GameJoltAPI.Instance.HasSignedInUser)
+        {
+            int scoreValue = Killed; // The actual score.
+            string scoreText = $"{Killed} killed"; // A string representing the score to be shown on the website.
+            GameJolt.API.Scores.Add(scoreValue, scoreText, tableID, extraData, (bool success) => {
+                switch (success)
+                {
+                    case true:
+                        Debug.Log("Sended value");
+                        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                        break;
+                    case false:
+                        Debug.Log("Not sended value");
+                        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                        break;
+                }
+            });
+        }
+        else
+        {
+            int scoreValue = Killed; // The actual score.
+            string scoreText = $"{Killed} killed"; // A string representing the score to be shown on the website.
+            GameJolt.API.Scores.Add(scoreValue, scoreText, "Niezalogowany", tableID, extraData, (bool success) => {
+                switch (success)
+                {
+                    case true:
+                        Debug.Log("Sended value");
+                        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                        break;
+                    case false:
+                        Debug.Log("Not sended value");
+                        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                        break;
+                }
+            });
+        }
+    }
 }
