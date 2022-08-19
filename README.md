@@ -61,3 +61,6 @@ LaserGun|4%/sec|4.5/sec
 
 
 I made a music, you can download it from [GameJolt](https://gamejolt.com/games/fps-first_personal_shooter/676618)
+
+-----
+Want to donate? Check this [site](https://streamlabs.com/crazyfan1251/tip).
