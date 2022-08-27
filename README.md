@@ -43,7 +43,9 @@ This Plasma Laser will meltdown enemys to their dead.
 #### Shield Injector
 
 This special Shield will make you invencible but it will hurt too (2% of live). While you have ammo it will give you protect.
-> When ammo is full it will make explotion that will damage and throw enemys away
+When ammo is full it will make explotion that will damage and throw enemys away
+
+> Shield is to protect but it can always fail
 
 ##### Auto Cannon
 It is a momentary cannon that fires at the closest enemy, dealing 1.5 damage to enemies, unfortunately it fires a maximum of 10 bullets...
