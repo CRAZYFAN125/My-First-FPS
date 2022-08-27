@@ -34,7 +34,10 @@ public class Target : MonoBehaviour
     }
     private void FixedUpdate()
     {
-
+        if (transform.position.y<-10)
+        {
+            Die();
+        }
         if (T > 0)
         {
             T -= Time.fixedDeltaTime;

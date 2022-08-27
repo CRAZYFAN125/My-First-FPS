@@ -40,6 +40,10 @@ Like any medicine, it has its value, replenishing health by as much as 10%, but 
 
 This Plasma Laser will meltdown enemys to their dead.
 
+#### Shield Injector
+
+This special Shield will make you invencible but it will hurt too (2% of live). While you have ammo it will give you protect.
+> When ammo is full it will make explotion that will damage and throw enemys away
 
 ##### Auto Cannon
 It is a momentary cannon that fires at the closest enemy, dealing 1.5 damage to enemies, unfortunately it fires a maximum of 10 bullets...
@@ -55,6 +59,7 @@ Rocket|25%|15
 Chow Chow|5%|5
 Medicine|100%|n/a
 LaserGun|4%/sec|4.5/sec
+Shield Injector|15%/sec|(Full ammo) 15 pkt
 
 >> While enemy have 40hp.
 

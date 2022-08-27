@@ -17,9 +17,13 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] guns;
 
+    public bool isShieldOnline = false;
+    [SerializeField] GameObject ShieldScreenEffect;
+
     public float playerHealh = 25f;
     public float ammo = 5f;
-    float startAmmo;
+
+    [HideInInspector]public float StartAmmo { private set; get; }
     [SerializeField] Gun Medicine;
     public bool isSprinting { get; private set; } = false;
     public bool canReload = true;
@@ -85,7 +89,7 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator Reloader()
     {
-        while (ammo < startAmmo)
+        while (ammo < StartAmmo)
         {
             ammo += 0.10f;
             yield return new WaitForSeconds(0.5f);
@@ -108,13 +112,17 @@ public class GameManager : MonoBehaviour
         {
             ammo = 1f;
         }
-        else if (ammo<startAmmo && MapGenerator.Ready)
+        else if (ammo<StartAmmo && MapGenerator.Ready)
         {
             ammo += .5f ;
         }
     }
     public void Damage(float amount)
     {
+        if (isShieldOnline)
+        {
+            return;
+        }
         playerHealh -= amount;
         if (playerHealh<=0)
         {
@@ -168,7 +176,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         instance = this;
-        startAmmo = ammo;
+        StartAmmo = ammo;
         if (Medicine != null)
         {
              Medicine.gameObject.SetActive(true);
@@ -183,6 +191,14 @@ public class GameManager : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (isShieldOnline)
+        {
+            ShieldScreenEffect.SetActive(true);
+        }
+        else
+        {
+            ShieldScreenEffect.SetActive(false);
+        }
         if (player.position.y <= -5f)
         {
             StartCoroutine(Killer());
@@ -202,6 +218,42 @@ public class GameManager : MonoBehaviour
         if (callbackContext.performed)
         {
             MapGenerator.Ready = false;
+            if (GameJolt.API.GameJoltAPI.Instance.HasSignedInUser)
+            {
+                int scoreValue = Killed; // The actual score.
+                string scoreText = $"{Killed} killed"; // A string representing the score to be shown on the website.
+                GameJolt.API.Scores.Add(scoreValue, scoreText, tableID, extraData, (bool success) => {
+                    switch (success)
+                    {
+                        case true:
+                            Debug.Log("Sended value");
+                            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                            break;
+                        case false:
+                            Debug.Log("Not sended value");
+                            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                            break;
+                    }
+                });
+            }
+            else
+            {
+                int scoreValue = Killed; // The actual score.
+                string scoreText = $"{Killed} killed"; // A string representing the score to be shown on the website.
+                GameJolt.API.Scores.Add(scoreValue, scoreText, "Niezalogowany", tableID, extraData, (bool success) => {
+                    switch (success)
+                    {
+                        case true:
+                            Debug.Log("Sended value");
+                            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                            break;
+                        case false:
+                            Debug.Log("Not sended value");
+                            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                            break;
+                    }
+                });
+            }
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
     }
