@@ -20,6 +20,13 @@ namespace Player.CustomGuns
 
         public void OnShoot()
         {
+            if (!isWorking)
+            {
+                if (gameManager.playerHealh - .2f <= 0f||gameManager.ammo<(gameManager.StartAmmo/8))
+                {
+                    return;
+                }
+            }
             if (!isWorking && gameManager.ammo >= gameManager.StartAmmo)
             {
                 GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");

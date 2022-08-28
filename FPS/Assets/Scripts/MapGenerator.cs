@@ -20,6 +20,7 @@ public class MapGenerator : MonoBehaviour
 
     [HideInInspector] public Vector3[] vertices;
     int[] triangles;
+    Vector2[] uvs;
 
     [HideInInspector] public int xSize = 20;
     [HideInInspector] public int zSize = 20;
@@ -136,6 +137,21 @@ public class MapGenerator : MonoBehaviour
             }
         }
 
+        #region Defining UVs
+
+        uvs = new Vector2[vertices.Length];
+
+        for (int i = 0, z = 0; z <= zSize; z++)
+        {
+            for (int x = 0; x <= xSize; x++)
+            {
+                uvs[i] = new Vector2((float)x / xSize, (float)z / zSize);
+                i++;
+            }
+        }
+
+        #endregion
+
         int vert = 0, tris = 0;
         triangles = new int[xSize * zSize * 6];
         for (int z = 0; z < zSize; z++)
@@ -154,6 +170,10 @@ public class MapGenerator : MonoBehaviour
             }
             vert++;
         }
+
+        
+
+
         surface.BuildNavMesh();
         List<int> Data = new List<int>();
         for (int i = 0; i < Mathf.FloorToInt(/*vertices.Length*/ (xSize / 10f)); i++)
@@ -257,8 +277,11 @@ public class MapGenerator : MonoBehaviour
     void UpdateMesh()
     {
         mesh.Clear();
+
         mesh.vertices = vertices;
         mesh.triangles = triangles;
+        mesh.uv = uvs;
+
         mesh.RecalculateNormals();
     }
 
