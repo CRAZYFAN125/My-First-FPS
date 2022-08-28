@@ -33,7 +33,7 @@ public class MapGenerator : MonoBehaviour
     public int EnemyCount = 0;
 
     [SerializeField] GameObject Shooter;
-    int fala = 5;
+    int fala = 1;
 
     // Start is called before the first frame update
     void Start()

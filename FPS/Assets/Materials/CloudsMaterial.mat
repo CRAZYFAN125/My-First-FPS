@@ -32,13 +32,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _CloudsAlpha: 2.58
-    - _CloudsPower: 0.97
-    - _DisirtionScale: 50
+    - _CloudsAlpha: 4.58
+    - _CloudsPower: 1.35
+    - _DisirtionScale: 42.45
     - _Scale: 154.06
     m_Colors:
     - Vector2_74ae596057aa4ed9b822616d5681fa44: {r: 0.003, g: 0.005, b: 0, a: 0}
     - _CloudsColor: {r: 2.828427, g: 1.9632612, b: 0, a: 1}
-    - _CloudsSpeed: {r: 0.0005, g: 0.0007, b: 0, a: 0}
-    - _DisortionSpeed: {r: -0.002, g: 0.002, b: 0, a: 0}
+    - _CloudsSpeed: {r: 0.0025, g: 0.0005, b: 0, a: 0}
+    - _DisortionSpeed: {r: -0.02, g: 0.02, b: 0, a: 0}
   m_BuildTextureStacks: []
