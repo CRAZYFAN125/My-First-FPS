@@ -34,7 +34,7 @@ public class MapGenerator : MonoBehaviour
 
     [SerializeField] GameObject Healer;
     [SerializeField] GameObject Shooter;
-    int fala = 8;
+    int fala = 1;
 
     // Start is called before the first frame update
     void Start()
