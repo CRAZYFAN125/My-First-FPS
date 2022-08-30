@@ -103,6 +103,7 @@ public class Enemy : MonoBehaviour
 
     }
 
+    
     void SelectedAdd()
     {
         if (point.Length - 1 != selected)

@@ -32,8 +32,9 @@ public class MapGenerator : MonoBehaviour
     public float secondsTimeWait = .1f;
     public int EnemyCount = 0;
 
+    [SerializeField] GameObject Healer;
     [SerializeField] GameObject Shooter;
-    int fala = 1;
+    int fala = 8;
 
     // Start is called before the first frame update
     void Start()
@@ -119,9 +120,18 @@ public class MapGenerator : MonoBehaviour
             g.SetActive(true);
             Debug.Log("Special");
         }
+
+        if (fala%8==0)
+        {
+            Vector3 position = new Vector3(Random.Range(-xSize/2,xSize/2),1.5f,Random.Range(-zSize/2,zSize/2));
+            Instantiate(Healer, position, Quaternion.Euler(-90,0,0), gameObject.transform);
+        }
+
         fala++;
 
         print(fala + "-Fala  Reszta po podzieleniu na 5-" + /*fala % 5*/cache);
+
+        
     }
     IEnumerator CreateShape()
     {
@@ -279,8 +289,8 @@ public class MapGenerator : MonoBehaviour
         mesh.Clear();
 
         mesh.vertices = vertices;
-        mesh.triangles = triangles;
         mesh.uv = uvs;
+        mesh.triangles = triangles;
 
         mesh.RecalculateNormals();
     }

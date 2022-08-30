@@ -15,11 +15,11 @@ C:/Users/alans/Desktop/Unity/Projects/FPS/FPS
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62994
+60819
 Successfully changed project path to: C:/Users/alans/Desktop/Unity/Projects/FPS/FPS
 C:/Users/alans/Desktop/Unity/Projects/FPS/FPS
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 73.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 81.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.24f1 (79c78de19888)
 [Subsystems] Discovering subsystems at path C:/Users/alans/Desktop/Unity/Editors/2020.3.24f1/Editor/Data/Resources/UnitySubsystems
@@ -35,39 +35,39 @@ Initialize mono
 Mono path[0] = 'C:/Users/alans/Desktop/Unity/Editors/2020.3.24f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/alans/Desktop/Unity/Editors/2020.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Users/alans/Desktop/Unity/Editors/2020.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56636
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56976
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/alans/Desktop/Unity/Editors/2020.3.24f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Users/alans/Desktop/Unity/Editors/2020.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002582 seconds.
+Registered in 0.002827 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 78.95 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 73.89 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.612 seconds
+- Completed reload, in  0.598 seconds
 Domain Reload Profiling:
-	ReloadAssembly (613ms)
-		BeginReloadAssembly (57ms)
+	ReloadAssembly (598ms)
+		BeginReloadAssembly (55ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (477ms)
-			LoadAssemblies (55ms)
+		EndReloadAssembly (466ms)
+			LoadAssemblies (53ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (141ms)
+			SetupTypeCache (147ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (210ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (198ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (79ms)
-				BeforeProcessingInitializeOnLoad (16ms)
-				ProcessInitializeOnLoadAttributes (83ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (74ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (79ms)
 				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -75,52 +75,52 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006250 seconds.
+Registered in 0.006015 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 78.86 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 74.79 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.284 seconds
+- Completed reload, in  1.248 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1285ms)
-		BeginReloadAssembly (145ms)
+	ReloadAssembly (1249ms)
+		BeginReloadAssembly (136ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1075ms)
-			LoadAssemblies (104ms)
+		EndReloadAssembly (1052ms)
+			LoadAssemblies (92ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (354ms)
+			SetupTypeCache (347ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (82ms)
-			SetupLoadedEditorAssemblies (427ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (429ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (79ms)
-				BeforeProcessingInitializeOnLoad (100ms)
-				ProcessInitializeOnLoadAttributes (228ms)
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (231ms)
 				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3755 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 168.6 MB.
-System memory in use after: 168.8 MB.
+Unloading 3757 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 169.9 MB.
+System memory in use after: 170.1 MB.
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 4207.
-Total: 4.740800 ms (FindLiveObjects: 0.628100 ms CreateObjectMapping: 0.268500 ms MarkObjects: 3.751000 ms  DeleteObjects: 0.091300 ms)
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 4209.
+Total: 5.072800 ms (FindLiveObjects: 0.393100 ms CreateObjectMapping: 0.118400 ms MarkObjects: 4.457000 ms  DeleteObjects: 0.102900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -134,113 +134,1473 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Models/EnemyHealer.blend
-  artifactKey: Guid(96a54f263800fbd40b3c2919bd8ee432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/EnemyHealer.blend using Guid(96a54f263800fbd40b3c2919bd8ee432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e273cfc42a092503b775fa33a575a37a') in 0.338359 seconds 
-  Import took 0.345456 seconds .
+  path: Assets/Prefabs/EnemyHealer.prefab
+  artifactKey: Guid(21894afaeca78fa45b6aa16ab3da1768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/EnemyHealer.prefab using Guid(21894afaeca78fa45b6aa16ab3da1768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cb25a7aba2800e9289de0d3883c9d31') in 0.242417 seconds 
+  Import took 0.248981 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 159.198852 seconds.
-  path: Assets/Models/EnemyHealer.blend
-  artifactKey: Guid(96a54f263800fbd40b3c2919bd8ee432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/EnemyHealer.blend using Guid(96a54f263800fbd40b3c2919bd8ee432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb84add9b70fb886a8d50734c912578') in 0.043582 seconds 
-  Import took 0.051211 seconds .
+  Time since last request: 32.576593 seconds.
+  path: Assets/Prefabs/EnemyHealer.prefab
+  artifactKey: Guid(21894afaeca78fa45b6aa16ab3da1768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/EnemyHealer.prefab using Guid(21894afaeca78fa45b6aa16ab3da1768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09061f81573166dabbe4e14cb7cb4163') in 0.021198 seconds 
+  Import took 0.028060 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.537107 seconds.
-  path: Assets/Models/Materials/EnemyHealer
-  artifactKey: Guid(246a5f4ada7a1f84e9ebab8d80a47040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Materials/EnemyHealer using Guid(246a5f4ada7a1f84e9ebab8d80a47040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02cffa127f5d49558f45d8a4317b11a6') in 0.003409 seconds 
-  Import took 0.010933 seconds .
+  Time since last request: 144.714343 seconds.
+  path: Assets/VFX
+  artifactKey: Guid(e916bc5206a17c04ead7dbbef5032a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX using Guid(e916bc5206a17c04ead7dbbef5032a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1fc3c64f7e1980ef58fd20249e9d269') in 0.009610 seconds 
+  Import took 0.016500 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/Models/Materials/EnemyHealer/Obręcz.mat
-  artifactKey: Guid(12c204bcd00896445953c172abef0334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Materials/EnemyHealer/Obręcz.mat using Guid(12c204bcd00896445953c172abef0334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624b53c55a27d935ecd11d4aac54519f') in 0.033774 seconds 
-  Import took 0.040764 seconds .
+  Time since last request: 18.233638 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2fb4e94fa4f1f0190570147a448f39') in 0.014919 seconds 
+  Import took 0.024030 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000735 seconds.
-  path: Assets/Models/Materials/EnemyHealer/Stojka_Emmision.mat
-  artifactKey: Guid(c159dc5ed8c560b4994f2bb5093c9187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Materials/EnemyHealer/Stojka_Emmision.mat using Guid(c159dc5ed8c560b4994f2bb5093c9187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4f86ac5fff259eb2eb8c941ecf60df5') in 0.016977 seconds 
-  Import took 0.023876 seconds .
+  Time since last request: 3.801826 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02da3e5216ac22803d37ba2ce1af813e') in 0.006569 seconds 
+  Import took 0.014164 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Models/Materials/EnemyHealer/Diamond.mat
-  artifactKey: Guid(bba86cc9a7f7f7d47ab9e3f2c9055fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Materials/EnemyHealer/Diamond.mat using Guid(bba86cc9a7f7f7d47ab9e3f2c9055fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4b22f4df1bd6c31908b1ca5a120ebef') in 0.017701 seconds 
-  Import took 0.024581 seconds .
+  Time since last request: 48.626073 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc0b53027bc0bc933b967a2565e7a1c1') in 0.004796 seconds 
+  Import took 0.011769 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/Models/Materials/EnemyHealer/Stojka_Default.mat
-  artifactKey: Guid(4bb8d433dfad56942b26c35e91161cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Materials/EnemyHealer/Stojka_Default.mat using Guid(4bb8d433dfad56942b26c35e91161cc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '369ebb5d68f711a8b4e6eb988ae59191') in 0.017801 seconds 
-  Import took 0.024459 seconds .
+  Time since last request: 15.396638 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a524f012f68b944946c68034a0c55ce8') in 0.005038 seconds 
+  Import took 0.012226 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 236.462212 seconds.
-  path: Assets/Materials/Shaders/EnemyHealer_ObreczShader.shadergraph
-  artifactKey: Guid(eb5142c9229d7944abf876ecfeb4bc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Shaders/EnemyHealer_ObreczShader.shadergraph using Guid(eb5142c9229d7944abf876ecfeb4bc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cce61110bc8bb6ac4aa3b0110da6b2b') in 0.011973 seconds 
-  Import took 0.020668 seconds .
+  Time since last request: 2.228455 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '192aebefa9c161cc142d0d230a64838f') in 0.006765 seconds 
+  Import took 0.014674 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 68.066555 seconds.
+  Time since last request: 3.329594 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31fcdb6edc2d2952d3e134fe86632f9f') in 0.006016 seconds 
+  Import took 0.012956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.892034 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a0306ee67f9ddb4475cb044dbeb88a1') in 0.006064 seconds 
+  Import took 0.013181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.737220 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a1ad591e859e9bc5d8cffbe4b3eaaec') in 0.006261 seconds 
+  Import took 0.013621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.970316 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c59ba63a8b2b9b816c595e4849d895aa') in 0.006549 seconds 
+  Import took 0.013539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1001.009402 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '428ad9e5ec576ff88cbd3d3253e74b70') in 0.010819 seconds 
+  Import took 0.020561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.263397 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c5919a1d309ed04adf1050fc2bcb55d') in 0.006474 seconds 
+  Import took 0.013376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.937682 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b31e5fa295e6c31d1f4523d63840eecb') in 0.005716 seconds 
+  Import took 0.012780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.782706 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee3d376fdd86bf2288ea9fa232420afa') in 0.007421 seconds 
+  Import took 0.015456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.192713 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fce4bde9e9248ab890d793944dde0b6a') in 0.007204 seconds 
+  Import took 0.016296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.602168 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '528b43a8aeebf9e0742ea248ee852e18') in 0.007548 seconds 
+  Import took 0.014438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.010995 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '986c8b7b798fb101ce1896b857cb9854') in 0.005776 seconds 
+  Import took 0.013236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.599165 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c65f99bfe8b4e8fe210604712ac5e032') in 0.007201 seconds 
+  Import took 0.014232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.470613 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '190aa1673be48c65f689b25a89f5dc33') in 0.005951 seconds 
+  Import took 0.014296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.006244 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackRecordButtonDisabled.png
+  artifactKey: Guid(495998c718a094540bbe57ae5ab07647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackRecordButtonDisabled.png using Guid(495998c718a094540bbe57ae5ab07647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b9f5c2b763996a7933916bc169ba23e') in 0.122463 seconds 
+  Import took 0.130313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Textures/UIFoldoutClosed.png
+  artifactKey: Guid(7a0568d5e3330b84687e307992be3030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/Debugging/Prefabs/Textures/UIFoldoutClosed.png using Guid(7a0568d5e3330b84687e307992be3030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '175dbbe609301903b3b287fdb0b4a551') in 0.043507 seconds 
+  Import took 0.052699 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackRecordButtonDisabled@2x.png
+  artifactKey: Guid(6091f9516d23100479c03bca26138bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/TrackRecordButtonDisabled@2x.png using Guid(6091f9516d23100479c03bca26138bc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad3e53437a3784e2107b75822a42be8d') in 0.024331 seconds 
+  Import took 0.032815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.111146 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '536b3bc15a3c469bbff2ac29868ba1de') in 0.007744 seconds 
+  Import took 0.014644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.750256 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5871a672448d8c7e6dbece491da18845') in 0.007841 seconds 
+  Import took 0.015956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 72.758086 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c0b3e9198fe685c753893c94be6fe55') in 0.007590 seconds 
+  Import took 0.014466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.291262 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72916e19468ccb7a4a7022fc56db2a6e') in 0.007637 seconds 
+  Import took 0.014634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.586195 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '536d0ff8d4cdd346af988bf60bf44020') in 0.006746 seconds 
+  Import took 0.013638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.609031 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '732f48a8230b023bd68139b5219e7e53') in 0.006864 seconds 
+  Import took 0.013604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.422333 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09b1acf59184c665207549a383b7a65b') in 0.005835 seconds 
+  Import took 0.013091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.383496 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d0f86b2aef01163c3d8b09c0f717c2d') in 0.005505 seconds 
+  Import took 0.011585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.727112 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1b72575f7f4764a0bb5cd3822ad62c') in 0.006593 seconds 
+  Import took 0.013713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.291066 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012eb9ddf64132b260cb2580fc080803') in 0.006277 seconds 
+  Import took 0.013640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.937891 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b35ce5fdc3e4af915abb953ec67ad3c3') in 0.006744 seconds 
+  Import took 0.014061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.367912 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b966aaf151f078be18e420c0e3552051') in 0.006966 seconds 
+  Import took 0.013574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.355781 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3580a135e4c0b50cb288ed075fd94b6') in 0.007191 seconds 
+  Import took 0.014149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.228069 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef08113d3e023b1e8953d7796ba80294') in 0.006798 seconds 
+  Import took 0.014069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.712280 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52868039afcf91ae10d065c0c377063') in 0.006402 seconds 
+  Import took 0.013380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.655821 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9753d2c8f4ccaefb53d41844fe66d295') in 0.006842 seconds 
+  Import took 0.014247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.007387 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3d4f9b2db6c2babc154b6c3a697a429') in 0.006579 seconds 
+  Import took 0.013945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.404526 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71cb4480549f7c66bb051892dce28467') in 0.005888 seconds 
+  Import took 0.014676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.678021 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f265b422a4eae196ab7a365a3350a0') in 0.006499 seconds 
+  Import took 0.013338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.692123 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148eb0b7791a17a02331d5d10af2886d') in 0.007104 seconds 
+  Import took 0.014323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.457933 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a8c6a60f887af58cd3936020936d385') in 0.007439 seconds 
+  Import took 0.015682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.535812 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bcae28721748b2e006d2f164d6d1939') in 0.005663 seconds 
+  Import took 0.012348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.653633 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d2ed9f570d307abb1f8805394f0e16') in 0.006743 seconds 
+  Import took 0.013810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.720939 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec7a0bdaca54aedbd60839411f54330b') in 0.007187 seconds 
+  Import took 0.014834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.384071 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b34b59994fbdf4c470d6f1f98898ff') in 0.006898 seconds 
+  Import took 0.016980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.232157 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc1437af4538795a7af451d0807ba577') in 0.008026 seconds 
+  Import took 0.015506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.302323 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66a7f2ba54dd77078c6364b3a3d2f69') in 0.007481 seconds 
+  Import took 0.015420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.653792 seconds.
   path: Assets/Materials/Shaders/Crystal1.shadergraph
   artifactKey: Guid(85808145d68a11142a90230bac94fdb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Shaders/Crystal1.shadergraph using Guid(85808145d68a11142a90230bac94fdb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ab2594028e3923451bd20b6a4d07d16') in 0.008130 seconds 
-  Import took 0.014411 seconds .
+Start importing Assets/Materials/Shaders/Crystal1.shadergraph using Guid(85808145d68a11142a90230bac94fdb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04231519c07626185f90fae339b67b2') in 0.009631 seconds 
+  Import took 0.016580 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 225.977847 seconds.
-  path: Assets/Materials/Shaders/Holo1.shadergraph
-  artifactKey: Guid(8d802d68ef681d34d85cbe542fabdc2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Shaders/Holo1.shadergraph using Guid(8d802d68ef681d34d85cbe542fabdc2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b670c35e7b3e71cbb4be97fed4598996') in 0.009435 seconds 
-  Import took 0.015776 seconds .
+  Time since last request: 13.618570 seconds.
+  path: Assets/Materials/Shaders/Crystal1.shadergraph
+  artifactKey: Guid(85808145d68a11142a90230bac94fdb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Shaders/Crystal1.shadergraph using Guid(85808145d68a11142a90230bac94fdb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '897df374b8f0b83481ed1e17b905491c') in 0.012094 seconds 
+  Import took 0.018394 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9148.637250 seconds.
-  path: Assets/Materials/Shaders/EnemyHealer_ObreczShader.shadergraph
-  artifactKey: Guid(eb5142c9229d7944abf876ecfeb4bc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Shaders/EnemyHealer_ObreczShader.shadergraph using Guid(eb5142c9229d7944abf876ecfeb4bc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31ec6ff6a143ba5079242205dff5a1a2') in 0.004951 seconds 
-  Import took 0.011472 seconds .
+  Time since last request: 9.760970 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19a17f0d0012eea44aa0c04e40ac1f05') in 0.006771 seconds 
+  Import took 0.016483 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 38.408699 seconds.
-  path: Assets/Materials/Shaders/EnemyHealer_ObreczShader.shadergraph
-  artifactKey: Guid(eb5142c9229d7944abf876ecfeb4bc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Shaders/EnemyHealer_ObreczShader.shadergraph using Guid(eb5142c9229d7944abf876ecfeb4bc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f64fc0dc953f01afc9ee7bc7fe58ec') in 0.004786 seconds 
-  Import took 0.011616 seconds .
+  Time since last request: 13.457630 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88c0c26b2f9e85ede34ec3c9785a328') in 0.007332 seconds 
+  Import took 0.013645 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 255.078539 seconds.
-  path: Assets/Materials/Shaders/EnemyHealer_ObreczShader.shadergraph
-  artifactKey: Guid(eb5142c9229d7944abf876ecfeb4bc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Shaders/EnemyHealer_ObreczShader.shadergraph using Guid(eb5142c9229d7944abf876ecfeb4bc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e04d0c56b185cf908066afacd91e168c') in 0.004914 seconds 
-  Import took 0.011201 seconds .
+  Time since last request: 21.178326 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96b08e6446d68d84f802cbd8eb5550cf') in 0.006630 seconds 
+  Import took 0.013695 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 5390.336170 seconds.
-  path: Assets/Materials/Shaders/EnemyHealer_ObreczShader.shadergraph
-  artifactKey: Guid(eb5142c9229d7944abf876ecfeb4bc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Shaders/EnemyHealer_ObreczShader.shadergraph using Guid(eb5142c9229d7944abf876ecfeb4bc6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7b2e85560556fdd27c9d3e956e2510d') in 0.007963 seconds 
-  Import took 0.018450 seconds .
+  Time since last request: 39.126614 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f453b15cf7522aa590f00eb31c9b02') in 0.007422 seconds 
+  Import took 0.016264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.938984 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c23172ea68bd4cf1ab4850507d84c6') in 0.006345 seconds 
+  Import took 0.013059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.519374 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f4193916999c0d0868760cc76d968f') in 0.006971 seconds 
+  Import took 0.014441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.961367 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcaf525c5bdc8d95a46daf76d4cef863') in 0.007233 seconds 
+  Import took 0.013413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.695613 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '013db9bd68389f97d22a7d6dba191b66') in 0.007987 seconds 
+  Import took 0.015334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.159033 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80ac7fa73e9b75ac3ef7e261c5a2381a') in 0.006485 seconds 
+  Import took 0.012965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 523.228963 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d835cec502f92930ea468b9d4f3df71') in 0.005846 seconds 
+  Import took 0.013835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.085121 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4626428208c3b815799328130d883b5') in 0.006989 seconds 
+  Import took 0.015365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.475569 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762c0cb268a8c47202e584b435fc8c48') in 0.009280 seconds 
+  Import took 0.017253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.761867 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f80f99fddd221b74fb5428c0b48b448') in 0.007939 seconds 
+  Import took 0.015177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.387165 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc5bc5c51ade8b8a05ab53378d34f36a') in 0.007103 seconds 
+  Import took 0.015425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.726576 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f08afa179640981575402b2fe61767') in 0.007188 seconds 
+  Import took 0.015129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.772471 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '344596634ff9c75d87e73cf8383f86b0') in 0.007238 seconds 
+  Import took 0.014339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.186520 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b3956f46d713656c59c2b82a88449c1') in 0.007162 seconds 
+  Import took 0.014589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.343965 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b44e6f50c344e6f76210b0cf1310f1a1') in 0.007187 seconds 
+  Import took 0.014065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.069131 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-dark@2x.png
+  artifactKey: Guid(1875b6a8fb148514ab1d9494eae2dd9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-dark@2x.png using Guid(1875b6a8fb148514ab1d9494eae2dd9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ff13dc10b4d563d87df522a07daaf59') in 0.051076 seconds 
+  Import took 0.059783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-light@2x.png
+  artifactKey: Guid(56f45ee382e8dc847bd536ba8de7300b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-light@2x.png using Guid(56f45ee382e8dc847bd536ba8de7300b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fe5469a6b665c0ce46b4250c079f011') in 0.023501 seconds 
+  Import took 0.031560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-light.png
+  artifactKey: Guid(f4d24f788ff8ef0448d273529dc5d9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/diff-light.png using Guid(f4d24f788ff8ef0448d273529dc5d9a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99887cc72c9abfdc9c4f3430d0c7974a') in 0.021808 seconds 
+  Import took 0.029479 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.330447 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineDigIn.png
+  artifactKey: Guid(22c3c381bd3cd4a40a8541103023e1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineDigIn.png using Guid(22c3c381bd3cd4a40a8541103023e1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942ae7aa89153352493de6fcf611781f') in 0.023118 seconds 
+  Import took 0.031170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Remove@2x.png
+  artifactKey: Guid(cc27e95868ab32345b74b8338c01ebed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Remove@2x.png using Guid(cc27e95868ab32345b74b8338c01ebed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11046d81b6afb602fa06e02db2ec4fed') in 0.027223 seconds 
+  Import took 0.034272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_CenterLight@2x.png
+  artifactKey: Guid(a14e6ee680df42f4c99bf69bc3d6b9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_CenterLight@2x.png using Guid(a14e6ee680df42f4c99bf69bc3d6b9ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000d7decd281757e63b9b7f501937623') in 0.025528 seconds 
+  Import took 0.031792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_RightArrow.png
+  artifactKey: Guid(99e5d180080c96940a65c6d906ff9131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_RightArrow.png using Guid(99e5d180080c96940a65c6d906ff9131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7039fe7c8e54e6cf2dd6d16e29f17d9') in 0.026523 seconds 
+  Import took 0.034414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Rotation.png
+  artifactKey: Guid(abc6ce87642c5c1478a4b107d1c5688a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Rotation.png using Guid(abc6ce87642c5c1478a4b107d1c5688a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a91a2e8c4e725dd9e618b07770bcb47') in 0.026391 seconds 
+  Import took 0.035394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Camera1.png
+  artifactKey: Guid(56c35c86bb44b0e4e84a22db56968157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Camera1.png using Guid(56c35c86bb44b0e4e84a22db56968157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94129261505cb29678b84b5471ff7dfe') in 0.025427 seconds 
+  Import took 0.033038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineHeaderMarkerIcon.png
+  artifactKey: Guid(4f8d98ef7dbbe3d469e14c04722cbeed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineHeaderMarkerIcon.png using Guid(4f8d98ef7dbbe3d469e14c04722cbeed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3089dd201b5865f7505f951afdfb4194') in 0.021698 seconds 
+  Import took 0.027679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_LayoutHorizontal.png
+  artifactKey: Guid(83cbec96661199e408a744d4c3e586e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_LayoutHorizontal.png using Guid(83cbec96661199e408a744d4c3e586e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc82565f2fadfb9ec4069be1b40de989') in 0.025835 seconds 
+  Import took 0.033744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Layout1.png
+  artifactKey: Guid(da974c4d40533154a83d57ca90e34bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Layout1.png using Guid(da974c4d40533154a83d57ca90e34bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f7b28ebbe386e17b766c41ce4a5fa92') in 0.027788 seconds 
+  Import took 0.037118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhoshe1.png
+  artifactKey: Guid(f2901efd8bb16bc408ad37f017fbf9bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhoshe1.png using Guid(f2901efd8bb16bc408ad37f017fbf9bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd839bdb3ee44d0f68d0d417f07f6947d') in 0.032392 seconds 
+  Import took 0.039076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhoshechristmas2.png
+  artifactKey: Guid(7fd3cda14282bb7429b8eeb6c121e5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhoshechristmas2.png using Guid(7fd3cda14282bb7429b8eeb6c121e5bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be3b2e8ee3603f8b2c51485e50dbc56') in 0.031278 seconds 
+  Import took 0.037664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/blue.png
+  artifactKey: Guid(33f32142c2c2d4662be5f5274db27158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/blue.png using Guid(33f32142c2c2d4662be5f5274db27158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5de9545b77b1bb8ae7bfd7d6cae22826') in 0.021263 seconds 
+  Import took 0.028757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Axis.png
+  artifactKey: Guid(7e853779c8fed4ebf917a0de21c79602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Axis.png using Guid(7e853779c8fed4ebf917a0de21c79602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e27109a6abfae6523010c97471f3793e') in 0.021775 seconds 
+  Import took 0.029239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBottom_Light.psd
+  artifactKey: Guid(585b70cb75dd43efbfead809c30a1731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBottom_Light.psd using Guid(585b70cb75dd43efbfead809c30a1731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f385a8af592c6630effa7f0c82e5379e') in 0.030826 seconds 
+  Import took 0.038604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000468 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Button@4x.png
+  artifactKey: Guid(db3dc7a02ac6d4e90bbe905a44ac265b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Button@4x.png using Guid(db3dc7a02ac6d4e90bbe905a44ac265b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21e5443cce76c17d7cd084f7ae602d2d') in 0.021101 seconds 
+  Import took 0.030947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhochristmas3.png
+  artifactKey: Guid(6fac4e39926fd9c4ca2ba4416160a857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhochristmas3.png using Guid(6fac4e39926fd9c4ca2ba4416160a857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97865cbc65e4517994f53963af5173a0') in 0.030701 seconds 
+  Import took 0.037309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_RightArrow@2x.png
+  artifactKey: Guid(28d47cbaafc98254f8d4f6184dff22cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_RightArrow@2x.png using Guid(28d47cbaafc98254f8d4f6184dff22cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75bfade3a2d3e17a8391c62128527e91') in 0.025323 seconds 
+  Import took 0.034252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhoshechristmas1.png
+  artifactKey: Guid(d98fbe17966d8ef449b25b99024bf36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhoshechristmas1.png using Guid(d98fbe17966d8ef449b25b99024bf36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b02b6859d39f4f5ceba67ee4fdd9b79') in 0.029962 seconds 
+  Import took 0.037310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Axis@4x.png
+  artifactKey: Guid(a940917cc397643afb071010cb2143d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Axis@4x.png using Guid(a940917cc397643afb071010cb2143d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '467296f5141aa68a9e8fd0c92b278c30') in 0.020238 seconds 
+  Import took 0.027647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Camera2@2x.png
+  artifactKey: Guid(99d7e777338ab8f4ba890cc738794dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Camera2@2x.png using Guid(99d7e777338ab8f4ba890cc738794dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f8d4cef2e01cf4e5aaa08e2d70a4ea7') in 0.025236 seconds 
+  Import took 0.033543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Remove.png
+  artifactKey: Guid(4ff71d806d58fd041be6e55d1d1ca70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Remove.png using Guid(4ff71d806d58fd041be6e55d1d1ca70e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb60294ceace1e3fdab182b3d26edad') in 0.022614 seconds 
+  Import took 0.032252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconaddedlocal@2x.png
+  artifactKey: Guid(02800fb9cff14da47a04572790384d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconaddedlocal@2x.png using Guid(02800fb9cff14da47a04572790384d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd70653c0ba777a3ec465954d788bd159') in 0.027317 seconds 
+  Import took 0.036032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineEditModeMixON.png
+  artifactKey: Guid(7c681ffb5a436684fa3e98a9b66775c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineEditModeMixON.png using Guid(7c681ffb5a436684fa3e98a9b66775c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa22757a5d49fcdb852066458cf5a852') in 0.022101 seconds 
+  Import took 0.029313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhoshechristmas3.png
+  artifactKey: Guid(f8c9467a892580344bb697526dac0d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhoshechristmas3.png using Guid(f8c9467a892580344bb697526dac0d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9605f3c8e2878f760e8b6e97e009d16a') in 0.029201 seconds 
+  Import took 0.038210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Position@3x.png
+  artifactKey: Guid(e1da124f7cbda41a4925397406076a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Position@3x.png using Guid(e1da124f7cbda41a4925397406076a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28e24056bf8085a50e552407dd9c44e8') in 0.024782 seconds 
+  Import took 0.032927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000491 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBaseLine.psd
+  artifactKey: Guid(8bc445bb79654bf496c92d0407840a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBaseLine.psd using Guid(8bc445bb79654bf496c92d0407840a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57dad845a03cbeb4c6298ad81aa64416') in 0.022526 seconds 
+  Import took 0.029509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_CenterLight.png
+  artifactKey: Guid(fca3bc21b4600e04faaddb69c5fad81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_CenterLight.png using Guid(fca3bc21b4600e04faaddb69c5fad81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '109ada9e7d014803de3ef59069701f52') in 0.025013 seconds 
+  Import took 0.033121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000471 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_LayoutCustom.png
+  artifactKey: Guid(8c3a606a4a147a34c952b98bf038c662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_LayoutCustom.png using Guid(8c3a606a4a147a34c952b98bf038c662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd531d0ca4667a0b31b80aa08be03943f') in 0.025194 seconds 
+  Import took 0.034079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_buttonssosigninemail.png
+  artifactKey: Guid(3086d66a563317b40a20a20da2c64ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_buttonssosigninemail.png using Guid(3086d66a563317b40a20a20da2c64ac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7e475a8d3168f179cef835af105fb4e') in 0.025833 seconds 
+  Import took 0.034231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000471 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineEditModeRippleON.png
+  artifactKey: Guid(67a774c4384aa6c488128e2851b18ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineEditModeRippleON.png using Guid(67a774c4384aa6c488128e2851b18ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '058e67d76b2a37b054af67c664530129') in 0.021271 seconds 
+  Import took 0.027925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_buttonssosigninemail@2x.png
+  artifactKey: Guid(144aa74618b85974a9a50f612c2fa8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_buttonssosigninemail@2x.png using Guid(144aa74618b85974a9a50f612c2fa8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '633e0d053b308c9c7d56c7aba88e2c10') in 0.026330 seconds 
+  Import took 0.034753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineEditModeReplaceON.png
+  artifactKey: Guid(7b4b3cedf598c954cb2f38d6e2e34c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineEditModeReplaceON.png using Guid(7b4b3cedf598c954cb2f38d6e2e34c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '468cdc0877872d4f36e7d7400a6434d8') in 0.019342 seconds 
+  Import took 0.027390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Layout2.png
+  artifactKey: Guid(98b5b3e7c51d32547b9b09232034b5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Layout2.png using Guid(98b5b3e7c51d32547b9b09232034b5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef579c29622f8261adfa95cfec4bb96') in 0.025599 seconds 
+  Import took 0.035242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBaseLine_Light.psd
+  artifactKey: Guid(18775b51e3bd42299fd30bd036ea982f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBaseLine_Light.psd using Guid(18775b51e3bd42299fd30bd036ea982f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb12bed2abbc8d875185d435df4969cb') in 0.019793 seconds 
+  Import took 0.027761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000493 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_RenderDoc@2x.png
+  artifactKey: Guid(9c63b51755ec8c845b857cc73a35d606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_RenderDoc@2x.png using Guid(9c63b51755ec8c845b857cc73a35d606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20ac7bc3c3d72f00f2c9a1f2c83ad0ef') in 0.027447 seconds 
+  Import took 0.034495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhoshe3.png
+  artifactKey: Guid(9bb60d9b0987c3747b57516cc172d0c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhoshe3.png using Guid(9bb60d9b0987c3747b57516cc172d0c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b06f9f941c17a9ae2bed7ee476e66bd7') in 0.031489 seconds 
+  Import took 0.039616 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Axis@3x.png
+  artifactKey: Guid(2e27a82b5cc4e4ef98cbef2d0b324aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Axis@3x.png using Guid(2e27a82b5cc4e4ef98cbef2d0b324aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b758a7928455f756eb55207f7d8d9189') in 0.021273 seconds 
+  Import took 0.027015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineEditModeRippleOFF.png
+  artifactKey: Guid(411e6f19c19fa0546af83aeb59c2ed4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineEditModeRippleOFF.png using Guid(411e6f19c19fa0546af83aeb59c2ed4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f7700a57a20f79b9310c5fd101b2899') in 0.025420 seconds 
+  Import took 0.030969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000446 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Camera1@2x.png
+  artifactKey: Guid(603d01d730be24147adda7897e463598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Camera1@2x.png using Guid(603d01d730be24147adda7897e463598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '946a2a276851585934f110f83e52eb6d') in 0.026551 seconds 
+  Import took 0.033575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000472 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineEditModeMixOFF.png
+  artifactKey: Guid(39d9575ed0465354cb02b69ea18526de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineEditModeMixOFF.png using Guid(39d9575ed0465354cb02b69ea18526de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a935d2b636883217e7c1722beae644e7') in 0.021552 seconds 
+  Import took 0.028617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhoshe2.png
+  artifactKey: Guid(17035c204825f6340a252046ab6476fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_genericbuhoshe2.png using Guid(17035c204825f6340a252046ab6476fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f55b2308b652c0c90e020909d06651c3') in 0.033066 seconds 
+  Import took 0.041481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Position@4x.png
+  artifactKey: Guid(ac4c5ccb2785f4460b2dcfe47010c688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/d_Position@4x.png using Guid(ac4c5ccb2785f4460b2dcfe47010c688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2320632d708a341a2a6db195aefed24d') in 0.021246 seconds 
+  Import took 0.028672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_renderdoc.png
+  artifactKey: Guid(cbe929948d88af7409a05054bc8187c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_renderdoc.png using Guid(cbe929948d88af7409a05054bc8187c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d81fb547caa0aca9c8a645d7ab4c272') in 0.026728 seconds 
+  Import took 0.035113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineSelector.png
+  artifactKey: Guid(06bf6150656339941aa98e175a995445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineSelector.png using Guid(06bf6150656339941aa98e175a995445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ccd93254f84c70185a4a5e9582c6db') in 0.021142 seconds 
+  Import took 0.028142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBottom.psd
+  artifactKey: Guid(ca51b19024094d1b87f3e07edb0a75fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBottom.psd using Guid(ca51b19024094d1b87f3e07edb0a75fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ae655225ee834596edf4f97b2328478') in 0.021341 seconds 
+  Import took 0.030532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000467 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Layout1@2x.png
+  artifactKey: Guid(4de5e4f3717b2c548bd8b90b6c628b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Layout1@2x.png using Guid(4de5e4f3717b2c548bd8b90b6c628b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '410b5c52563bbf986c2e0d49676b8779') in 0.025051 seconds 
+  Import took 0.031693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconaddedlocal.png
+  artifactKey: Guid(0c6a2a64ca9f9c946a7dbbd1674cf5bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/PlasticSCM/Assets/Images/d_iconaddedlocal.png using Guid(0c6a2a64ca9f9c946a7dbbd1674cf5bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95af9cce58d3ddc6679b869b31defd3b') in 0.026405 seconds 
+  Import took 0.033330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/back-dark.png
+  artifactKey: Guid(8e3ec2dfd58b79842aa78376678a9a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Icons/back-dark.png using Guid(8e3ec2dfd58b79842aa78376678a9a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b889593aeaf6ea456c9401e775af7490') in 0.021155 seconds 
+  Import took 0.028302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Layout2@2x.png
+  artifactKey: Guid(50f7a3e9878119a4da02f38cf05d75ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Layout2@2x.png using Guid(50f7a3e9878119a4da02f38cf05d75ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c6f9e58bede63819f1aeeeae70914b') in 0.025008 seconds 
+  Import took 0.032323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000501 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Camera2.png
+  artifactKey: Guid(281160d54742cbb44a88a61bf8ccfb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Camera2.png using Guid(281160d54742cbb44a88a61bf8ccfb16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03b8a36f8f504e1a9881cb3614ac7b69') in 0.029781 seconds 
+  Import took 0.039468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_LayoutVertical.png
+  artifactKey: Guid(02c3588c32f640d47bb70ee3fa774fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_LayoutVertical.png using Guid(02c3588c32f640d47bb70ee3fa774fce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47823dfbcbb586d3d746f671951443a') in 0.026560 seconds 
+  Import took 0.035116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Axis@2x.png
+  artifactKey: Guid(d0006d51a864248adba0238883f8c71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.inputsystem/InputSystem/Editor/Icons/Axis@2x.png using Guid(d0006d51a864248adba0238883f8c71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d7ac45cc97edd06f5592cfc9bbb37bc') in 0.021698 seconds 
+  Import took 0.029640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000494 seconds.
+  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineEditModeReplaceOFF.png
+  artifactKey: Guid(912fd71cbf4cbe140b4f240bedbc1f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/Icons/d_TimelineEditModeReplaceOFF.png using Guid(912fd71cbf4cbe140b4f240bedbc1f3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e651a80eef5b6ec9c23b6971186a0a6') in 0.021886 seconds 
+  Import took 0.028705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_LayoutHorizontal@2x.png
+  artifactKey: Guid(9cad92999ddfa304495b735a55c78329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_LayoutHorizontal@2x.png using Guid(9cad92999ddfa304495b735a55c78329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc3259b67507af63f04cf32c153dfff') in 0.025630 seconds 
+  Import took 0.034908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_LayoutCustom@2x.png
+  artifactKey: Guid(b753c88a6aeb2674fa1d4f0a4c0a285a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_LayoutCustom@2x.png using Guid(b753c88a6aeb2674fa1d4f0a4c0a285a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c15f430f236f7479f8ef83038ff50f72') in 0.026231 seconds 
+  Import took 0.034195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.449219 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f9b73b68cd86f29325f291e80d4c2f') in 0.007216 seconds 
+  Import took 0.016062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.674853 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2e486c5b007c35d6a5571c72a9569e') in 0.006912 seconds 
+  Import took 0.013955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.293690 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9be13e73fb639915b3c2d0f832f5ad9a') in 0.007249 seconds 
+  Import took 0.014189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.088129 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5732e1e4c5664911df6d8a9b2c11426') in 0.007316 seconds 
+  Import took 0.015036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.030595 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692f855176d3cd788207d3d37cde102b') in 0.006661 seconds 
+  Import took 0.012733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.086571 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '528dbb8adcd3ed16f3c848d88720411d') in 0.006240 seconds 
+  Import took 0.012459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.233949 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa14f8d86692b6bb21362f1ecba38994') in 0.006967 seconds 
+  Import took 0.014050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.411893 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df814205be4706efd0d163d559810120') in 0.007039 seconds 
+  Import took 0.014080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.361474 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43bc869d8712004c7464252ec6f65e7e') in 0.009261 seconds 
+  Import took 0.017099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.466585 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37a7f5deded703818d0bd0da3bb791ba') in 0.008440 seconds 
+  Import took 0.015540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.143674 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb4f77d2b452feba752c4e316a8c248f') in 0.007977 seconds 
+  Import took 0.015626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.213784 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51da8a7db62ca93fe25cf9379bed497c') in 0.009477 seconds 
+  Import took 0.017755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.018104 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a93cf32d60d3e0993ed9fdc83fae91c') in 0.007496 seconds 
+  Import took 0.014886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.950461 seconds.
+  path: Assets/POLYGON weapons/Show_scene_unofficial/Data/red_wall.png
+  artifactKey: Guid(a1af08f2d2639d14c9a46b318ef7e60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Show_scene_unofficial/Data/red_wall.png using Guid(a1af08f2d2639d14c9a46b318ef7e60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b38f6cf4d1695b660d92335ae6b2f941') in 0.030666 seconds 
+  Import took 0.039157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.293613 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eab30ee6bd0c1c87a9fc0d5693712c57') in 0.008705 seconds 
+  Import took 0.017013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.470974 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc2507b3d2880b994d15498499ba5ae8') in 0.007231 seconds 
+  Import took 0.014555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.667661 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d66d72b12af58562663d2c908c88541') in 0.007832 seconds 
+  Import took 0.014829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.242178 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cf1fe0bbdab66f5e7a73f61b111256c') in 0.010459 seconds 
+  Import took 0.020166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.867249 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f224998f8d16213ff47ed3fd32970ede') in 0.008177 seconds 
+  Import took 0.016350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.637864 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0db7f6b763d4d606f5170bf52be7c2f7') in 0.008023 seconds 
+  Import took 0.015385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 85.019659 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be9def1105e725bbfb13238c92db1967') in 0.007610 seconds 
+  Import took 0.015931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.371375 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab34669083f73b81f025fb936657af57') in 0.009184 seconds 
+  Import took 0.016220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 168.151146 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7008aeb6189a11774b5cfb73da320aa1') in 0.007590 seconds 
+  Import took 0.018518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.984951 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2053ebf01e0a4875857d9da53c4d94') in 0.006224 seconds 
+  Import took 0.013092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.298509 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '006798867246018dd9d0c3f8ffaa3fea') in 0.007641 seconds 
+  Import took 0.013777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.271776 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb1a8cc948ce7f20cc309d9bd897675a') in 0.006999 seconds 
+  Import took 0.015001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.756386 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f39c58834ffcb806ad9554330e9d27a') in 0.008219 seconds 
+  Import took 0.015690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.722927 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ae52cf45cf26d107d1406ee6f35f42') in 0.008125 seconds 
+  Import took 0.019351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.706689 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b546d46382ce0b817087dfae07f2872') in 0.006758 seconds 
+  Import took 0.013715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 281.405535 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab935ba4ea61d25ff3b61cd1efa66a6') in 0.008229 seconds 
+  Import took 0.016325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 85.779665 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71de40967a79b90b18b91b028684e83d') in 0.007441 seconds 
+  Import took 0.014607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 210.258337 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/pumpgun_a/pumpgun_a.png
+  artifactKey: Guid(9a67714ff5d3ac541acb9b1dd38eaef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/pumpgun_a/pumpgun_a.png using Guid(9a67714ff5d3ac541acb9b1dd38eaef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a74a5465db17c4372d288404b6c70f09') in 0.021824 seconds 
+  Import took 0.028477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.467142 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/Pistol9/Pistol9_b.png
+  artifactKey: Guid(96dca0feb1ff28e4293315806607b494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/Pistol9/Pistol9_b.png using Guid(96dca0feb1ff28e4293315806607b494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dd866581889dd403bb94c2548446f51') in 0.022408 seconds 
+  Import took 0.030180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000403 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/Nsp/Nsp.png
+  artifactKey: Guid(9b411591cfffbed4dba0b37d11114d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/Nsp/Nsp.png using Guid(9b411591cfffbed4dba0b37d11114d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa5b7c74fdb547b80e6c8d022d065ab') in 0.021573 seconds 
+  Import took 0.028865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/old_pistol/old_pistol_a.png
+  artifactKey: Guid(416c25bab782d4445a6cf9a071cef00d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/old_pistol/old_pistol_a.png using Guid(416c25bab782d4445a6cf9a071cef00d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ba7d8495db82abc5d3ea6eb91edddb') in 0.023366 seconds 
+  Import took 0.030735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/Pistol9/Pistol9_a.png
+  artifactKey: Guid(995330760d7b83b47b44b6147d3f2268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/Pistol9/Pistol9_a.png using Guid(995330760d7b83b47b44b6147d3f2268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ba024645c4b1a8b790e8d7805b38eb') in 0.026064 seconds 
+  Import took 0.033579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/lamp_laser_a/lamp_laser_a_c.png
+  artifactKey: Guid(45fcaa60e080537489f42d498338d701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/lamp_laser_a/lamp_laser_a_c.png using Guid(45fcaa60e080537489f42d498338d701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b8051e631ce30f029e93e3d54c00d4c') in 0.023825 seconds 
+  Import took 0.031598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/HunterRifle/HunterRifle_cam.renderTexture
+  artifactKey: Guid(51c312cbf47a2104a9c8cd81c20222a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/HunterRifle/HunterRifle_cam.renderTexture using Guid(51c312cbf47a2104a9c8cd81c20222a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '805a47ea9d49a92ab9ab78ee5f7bcb09') in 0.033930 seconds 
+  Import took 0.042352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/POLYGON weapons/Show_scene_unofficial/Data/Gold.png
+  artifactKey: Guid(04f52c318cecdba4c86f31faabdf58cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Show_scene_unofficial/Data/Gold.png using Guid(04f52c318cecdba4c86f31faabdf58cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65878bf3e0a6c6c1b6ab3dc235b01003') in 0.022959 seconds 
+  Import took 0.030657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/knife/knife.png
+  artifactKey: Guid(3a33509ba548505449594854e7938e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/knife/knife.png using Guid(3a33509ba548505449594854e7938e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24a09c529aae64f236d7d1a868651871') in 0.025862 seconds 
+  Import took 0.032689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/POLYGON weapons/Show_scene_unofficial/Data/Gold 1.png
+  artifactKey: Guid(c7527e5de46bb1947bac4f65e03e42fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Show_scene_unofficial/Data/Gold 1.png using Guid(c7527e5de46bb1947bac4f65e03e42fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b4e5740163b83c21b5b8b687ce4315') in 0.029532 seconds 
+  Import took 0.037272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/POLYGON weapons/Scenes/Show_scene/Lightmap-0_comp_light.exr
+  artifactKey: Guid(df7e6e9f1d734644f997734d4be56aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Scenes/Show_scene/Lightmap-0_comp_light.exr using Guid(df7e6e9f1d734644f997734d4be56aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a261de227848f29bc4a1ea70b273f838') in 0.053850 seconds 
+  Import took 0.061215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/HunterRifle/HunterRifle_b.png
+  artifactKey: Guid(5300ac159b6418b46944c32dc481c30a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/HunterRifle/HunterRifle_b.png using Guid(5300ac159b6418b46944c32dc481c30a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2cb7ebb41f6bedfb648684949879b75') in 0.022455 seconds 
+  Import took 0.029681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/POLYGON weapons/Scenes/Show_scene/Lightmap-0_comp_dir.png
+  artifactKey: Guid(42be489f2a40a3d4bb54cc1085c716a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Scenes/Show_scene/Lightmap-0_comp_dir.png using Guid(42be489f2a40a3d4bb54cc1085c716a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec624fda00e944d766d0c133acfbc5f') in 0.028833 seconds 
+  Import took 0.035878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/laser_b/laser_b_emission.png
+  artifactKey: Guid(6d0531f3f78600c4592a088fe75eea8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/laser_b/laser_b_emission.png using Guid(6d0531f3f78600c4592a088fe75eea8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a84a56d82305f080428966a6e4358c5b') in 0.030660 seconds 
+  Import took 0.036757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/laser_b/laser_b.png
+  artifactKey: Guid(5615e5b3c1d4c1740854413f9c869ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/laser_b/laser_b.png using Guid(5615e5b3c1d4c1740854413f9c869ed8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab76c9770bf652e162b633461abbadee') in 0.023312 seconds 
+  Import took 0.030193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/Pistol9/Pistol9_c.png
+  artifactKey: Guid(895beadc463645045a7d2fe0e6405da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/Pistol9/Pistol9_c.png using Guid(895beadc463645045a7d2fe0e6405da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac86882718e92696e40579c912392a0') in 0.021617 seconds 
+  Import took 0.028990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/lamp_b/lamp_b.png
+  artifactKey: Guid(1f5067c72ced267408ab5b26bf2fcc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/equipment_mats/lamp_b/lamp_b.png using Guid(1f5067c72ced267408ab5b26bf2fcc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ec446201180c2c988717f6c993c11d') in 0.021301 seconds 
+  Import took 0.028154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/ClusterSub/ClusterSub.png
+  artifactKey: Guid(7d509160ddff641409dde36ccfb5dd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/ClusterSub/ClusterSub.png using Guid(7d509160ddff641409dde36ccfb5dd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6da87e4e59f6673764705d0be704abbc') in 0.021668 seconds 
+  Import took 0.028829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/ClusterShotgun/ClusterShotgun.png
+  artifactKey: Guid(387bfcaefe489d946929057ad06c97d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/ClusterShotgun/ClusterShotgun.png using Guid(387bfcaefe489d946929057ad06c97d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cfa846da0ba94c2cc2a8a45a2e5ce8e') in 0.021465 seconds 
+  Import took 0.029178 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/old_pistol/old_pistol_b.png
+  artifactKey: Guid(d63db9356898cbf46a07fea91ac35ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/old_pistol/old_pistol_b.png using Guid(d63db9356898cbf46a07fea91ac35ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c30fcbebea156b889810ad1e15c0c2be') in 0.021692 seconds 
+  Import took 0.029522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/HunterRifle/HunterRifle_a.png
+  artifactKey: Guid(6cc2983959cb54943a73a09affb8d2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/POLYGON weapons/Assets_official/FBXTexMat/POLYGON weapons pack/HunterRifle/HunterRifle_a.png using Guid(6cc2983959cb54943a73a09affb8d2a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0586b209372719715a6e2767ad8a3b5') in 0.021886 seconds 
+  Import took 0.029048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.093270 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7db6b689dc252892884fc19f993d6922') in 0.007409 seconds 
+  Import took 0.014553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.023591 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c59f6bb8b6491d611aa4f3024741142') in 0.007582 seconds 
+  Import took 0.014836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.532722 seconds.
+  path: Assets/VFX/EnemyHealerVFX.vfx
+  artifactKey: Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFX/EnemyHealerVFX.vfx using Guid(04c51f3de827b63469d0218b4ddb8538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56ead822c8f9dadb59740c245c264b7e') in 0.008057 seconds 
+  Import took 0.014832 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

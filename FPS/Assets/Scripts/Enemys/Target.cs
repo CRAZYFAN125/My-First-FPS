@@ -48,6 +48,22 @@ public class Target : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Heal object with 'Target' component
+    /// </summary>
+    /// <param name="amount">Amount of points to heal</param>
+    public void Heal(float amount)
+    {
+        if (health+amount>MaxHealth)
+        {
+            health = MaxHealth;
+        }
+        else
+        {
+            health+=amount;
+        }
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if (enemy == null)
