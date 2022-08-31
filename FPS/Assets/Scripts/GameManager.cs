@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using GameJolt.API.Objects;
+using GameJolt.API;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -202,6 +204,24 @@ public class GameManager : MonoBehaviour
         if (player.position.y <= -5f)
         {
             StartCoroutine(Killer());
+        }
+
+        if (GameJolt.API.GameJoltAPI.Instance.HasSignedInUser&&Killed==100)
+        {
+            GameJolt.API.Trophies.TryUnlock(156953, (TryUnlockResult result) => {
+                switch (result)
+                {
+                    case TryUnlockResult.Unlocked:
+                        Debug.Log("You've unlocked the trophy!");
+                        break;
+                    case TryUnlockResult.AlreadyUnlocked:
+                        Debug.Log("The trophy was already unlocked");
+                        break;
+                    case TryUnlockResult.Failure:
+                        Debug.LogError("Something went wrong!");
+                        break;
+                }
+            });
         }
     }
     IEnumerator Killer()

@@ -3,39 +3,58 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMulti : NetworkBehaviour
+namespace Crazy.Multiplayer.MultiplayerScripts
 {
-    [SyncVar] public float Health;
-    float MaxHealth;
-    Transform player;
-    public Rigidbody rb;
-
-    [Server]
-    private void Start()
+    public class EnemyMulti : NetworkBehaviour
     {
-        GameObject[] Players = GameObject.FindGameObjectsWithTag("Player");
-        float smallestDistance = int.MaxValue;
-        if (Players.Length>1)
+        [SyncVar] public float Health;
+        float MaxHealth;
+        Transform player;
+        public Rigidbody rb;
+
+        [Server]
+        private void Start()
         {
-            foreach (var item in Players)
+            GameObject[] Players = GameObject.FindGameObjectsWithTag("Player");
+            float smallestDistance = int.MaxValue;
+            if (Players.Length > 1)
             {
-                if (Vector3.Distance(item.transform.position, transform.position) < smallestDistance)
+                foreach (var item in Players)
                 {
-                    smallestDistance = Vector3.Distance(item.transform.position, transform.position);
-                    player = item.transform;
+                    if (Vector3.Distance(item.transform.position, transform.position) < smallestDistance)
+                    {
+                        smallestDistance = Vector3.Distance(item.transform.position, transform.position);
+                        player = item.transform;
+                    }
                 }
             }
+            else
+            {
+                player = Players[0].transform;
+            }
         }
-        else
+
+        [Server]
+        public bool Hurt(float amount)
         {
-            player = Players[0].transform;
+            if (Health - amount <= 0)
+            {
+                Destroy(gameObject);
+                return true;
+            }
+            else
+            {
+                Health -= amount;
+                return false;
+            }
         }
-    }
 
-    [Server]
-    private void Update()
-    {
-        rb.MovePosition(transform.position+(player.position-transform.position) * (Time.deltaTime * .5f));
-    }
+        [Server]
+        private void Update()
+        {
+            rb.MovePosition(transform.position + (player.position - transform.position) * (Time.deltaTime * .5f));
 
+        }
+
+    }
 }

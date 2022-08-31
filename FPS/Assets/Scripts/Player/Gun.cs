@@ -91,8 +91,7 @@ public class Gun : MonoBehaviour
                     //particleS.Play();
                     //Instantiate(particles, pPoint.position, Player.localRotation);
 
-                    RaycastHit hit;
-                    if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+                    if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out RaycastHit hit, range))
                     {
                         Target target = hit.transform.GetComponent<Target>();
                         if (target != null)
