@@ -1,6 +1,5 @@
 using Mirror;
 using UnityEngine;
-using Crazy.Multiplayer.MultiplayerScripts;
 
 
 public class MultiplayerGameManager : NetworkBehaviour
@@ -13,8 +12,6 @@ public class MultiplayerGameManager : NetworkBehaviour
     [SerializeField] int EnemysAmount = 2;
     bool isRunning = false;
 
-    [Header("Other thinks:")]
-    [SerializeField] GameObject startCamera;
 
     [Server]
     public override void OnStartServer()
@@ -25,13 +22,6 @@ public class MultiplayerGameManager : NetworkBehaviour
         Application.targetFrameRate = 60;
         timeToNextSpawn = timeToSpawn;
         isRunning = true;
-    }
-
-    public override void OnStartClient()
-    {
-        base.OnStartClient();
-
-        startCamera.SetActive(false);
     }
 
     [ServerCallback]

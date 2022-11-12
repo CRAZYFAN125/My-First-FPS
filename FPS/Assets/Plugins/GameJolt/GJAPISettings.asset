@@ -22,7 +22,7 @@ MonoBehaviour:
   useCaching: 1
   encryptionKey: ci*5s8=h-DAfVpHB
   logLevel: 1
-  secretTrophies: 19650200
+  secretTrophies: 
   autoConnect: 0
   user: 
   token: 
