@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 
 public class Target : MonoBehaviour
@@ -18,7 +17,7 @@ public class Target : MonoBehaviour
     public void TakeDamage(float amount)
     {
         health -= amount;
-        if (health<=0f)
+        if (health <= 0f)
         {
             Die();
         }
@@ -34,7 +33,7 @@ public class Target : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (transform.position.y<-10)
+        if (transform.position.y < -10)
         {
             Die();
         }
@@ -54,26 +53,28 @@ public class Target : MonoBehaviour
     /// <param name="amount">Amount of points to heal</param>
     public void Heal(float amount)
     {
-        if (health+amount>MaxHealth)
+        if (health + amount > MaxHealth)
         {
             health = MaxHealth;
         }
         else
         {
-            health+=amount;
+            health += amount;
         }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (enemy == null)
+        if (enemy != null)
         {
-            return;
-        }
-        if (other.tag == "Player" && T == 0)
-        {
-            GameManager.instance.Damage(enemy.Force);
-            T = 5f;
+            if (!enemy.IsGolerk_)
+            {
+                if (other.tag == "Player" && T == 0)
+                {
+                    GameManager.instance.Damage(enemy.Force);
+                    T = 5f;
+                }
+            }
         }
     }
 }

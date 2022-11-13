@@ -16,7 +16,7 @@ public class MapGenerator : MonoBehaviour
     float chance;
     Mesh mesh;
 
-    public NavMeshSurface surface;
+    public NavMeshSurface[] surfaces;
 
     [HideInInspector] public Vector3[] vertices;
     int[] triangles;
@@ -34,17 +34,18 @@ public class MapGenerator : MonoBehaviour
 
     [SerializeField] GameObject Healer;
     [SerializeField] GameObject Shooter;
-    int fala = 1;
+    [SerializeField] GameObject Golerk;
+    int fala = 9;
 
     // Start is called before the first frame update
     void Start()
     {
-        chance = 100/Spawns.Length;
+        chance = 100 / Spawns.Length;
 
         foreach (SpawnRate item in Spawns)
         {
-            item.SzansaMin = item.Szansa*100;
-            item.SzansaMax = (item.Szansa*chance)*100;
+            item.SzansaMin = item.Szansa * 100;
+            item.SzansaMax = (item.Szansa * chance) * 100;
         }
 
         mesh = new Mesh();
@@ -96,7 +97,7 @@ public class MapGenerator : MonoBehaviour
         foreach (SpawnRate item in Spawns)
         {
             print(item.SzansaMin + " | " + item.SzansaMax);
-            if (r>=item.SzansaMin&&r<=item.SzansaMax)
+            if (r >= item.SzansaMin && r <= item.SzansaMax)
             {
                 obj = item.@object;
             }
@@ -112,7 +113,7 @@ public class MapGenerator : MonoBehaviour
         }
 
         int cache = fala % 5;
-        if (cache==0)
+        if (cache == 0)
         {
             int C = Mathf.FloorToInt(Random.Range(1, vertices.Length));
             GameObject g = Instantiate(Shooter, vertices[C] - new Vector3(xSize / 2, -2f, zSize / 2), Quaternion.identity, gameObject.transform);
@@ -121,17 +122,23 @@ public class MapGenerator : MonoBehaviour
             Debug.Log("Special");
         }
 
-        if (fala%8==0)
+        if (fala % 8 == 0)
         {
-            Vector3 position = new Vector3(Random.Range(-xSize/2,xSize/2),1.5f,Random.Range(-zSize/2,zSize/2));
-            Instantiate(Healer, position, Quaternion.Euler(-90,0,0), gameObject.transform);
+            Vector3 position = new Vector3(Random.Range(-xSize / 2, xSize / 2), 1.5f, Random.Range(-zSize / 2, zSize / 2));
+            Instantiate(Healer, position, Quaternion.Euler(-90, 0, 0), gameObject.transform);
+        }
+        if (fala % 10 == 0)
+        {
+            Vector3 position = new Vector3(Random.Range(-xSize / 2, xSize / 2), 2, Random.Range(-zSize / 2, zSize / 2));
+            Instantiate(Golerk, position, Quaternion.identity, gameObject.transform).SetActive(true);
+            print("GOLERK");
         }
 
         fala++;
 
         print(fala + "-Fala  Reszta po podzieleniu na 5-" + /*fala % 5*/cache);
 
-        
+
     }
     IEnumerator CreateShape()
     {
@@ -181,10 +188,13 @@ public class MapGenerator : MonoBehaviour
             vert++;
         }
 
-        
 
 
-        surface.BuildNavMesh();
+
+        foreach (var item in surfaces)
+        {
+            item.BuildNavMesh();
+        }
         List<int> Data = new List<int>();
         for (int i = 0; i < Mathf.FloorToInt(/*vertices.Length*/ (xSize / 10f)); i++)
         {

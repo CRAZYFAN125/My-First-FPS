@@ -17,11 +17,25 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject VFX_Shoot;
     [SerializeField] Transform[] ShootingPoints;
     [SerializeField] float TimeForLoadShoot = .5f;
+
     Vector3[] point;
     int selected = 0;
     public bool canMove { get; set; } = true;
     Rigidbody rb;
-    float xSize=0, zSize = 0;
+    float xSize = 0, zSize = 0;
+
+    [Header("If its \"Golerk\"")]
+    [SerializeField] bool isGolerk = false;
+    public bool IsGolerk_ { get => isGolerk; }
+    Vector3 spawnPoint;
+
+    bool isPlayerInRange = false;
+    [SerializeField] float FindingRange = 15f;
+    [SerializeField] Animator animator;
+    [SerializeField] float gSpeedf = 3f;
+    bool hide = false;
+
+
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -30,9 +44,15 @@ public class Enemy : MonoBehaviour
     {
         target = GetComponent<Target>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        material = new Material(GetComponent<MeshRenderer>().material);
-        material.SetFloat("_MLife", target.MaxHealth);
-        GetComponent<MeshRenderer>().material = material;
+        if (!isGolerk)
+        {
+            material = new Material(GetComponent<MeshRenderer>().material);
+            material.SetFloat("_MLife", target.MaxHealth);
+            GetComponent<MeshRenderer>().material = material;
+        }
+        //else
+        //    material = new Material(GetComponent<MeshRenderer>().materials[1]);
+
         if (isShooting)
         {
             VFX_Shoot.gameObject.SetActive(false);
@@ -55,6 +75,10 @@ public class Enemy : MonoBehaviour
             rb = GetComponent<Rigidbody>();
 
         }
+        if (isGolerk)
+        {
+            spawnPoint = transform.position;
+        }
     }
 
 
@@ -64,46 +88,98 @@ public class Enemy : MonoBehaviour
         {
             return;
         }
-        if (!isShooting)
+        if (!isGolerk)
         {
-            agent.SetDestination(player.position);
-            if (gameObject.transform.position.x - player.position.x <= 10 && gameObject.transform.position.z - player.position.z <= 10)
+            if (!isShooting)
             {
-                agent.speed = 2.5f;
+                agent.SetDestination(player.position);
+                if (gameObject.transform.position.x - player.position.x <= 10 && gameObject.transform.position.z - player.position.z <= 10)
+                {
+                    agent.speed = 2.5f;
+                }
+                else
+                {
+                    agent.speed = 1;
+                }
             }
             else
             {
-                agent.speed = 1;
+                if (canMove)
+                {
+                    if (transform.position.x - point[selected].x < 2 && transform.position.z - point[selected].z < 2)
+                    {
+                        if (Vector3.Distance(transform.position, player.position) < 5)
+                        {
+                            SelectedAdd();
+                        }
+                        else
+                        {
+                            StartCoroutine(Shooting());
+                        }
+                    }
+                    else
+                    {
+                        Vector3 dir = point[selected] - new Vector3(xSize / 3, 0, zSize / 3) - transform.position;
+                        rb.MovePosition(transform.position + (dir * Time.fixedDeltaTime * 1.2f));
+                        print(transform.position + dir);
+                    }
+                }
             }
         }
         else
         {
-            if (canMove)
+            if (!hide)
             {
-                if (transform.position.x- point[selected].x < 2 && transform.position.z - point[selected].z<2)
+                if (Vector3.Distance(transform.position, player.position) <= FindingRange)
                 {
-                    if (Vector3.Distance(transform.position, player.position) < 5)
-                    {
-                        SelectedAdd();
-                    }
-                    else
-                    {
-                        StartCoroutine(Shooting());
-                    }
+                    isPlayerInRange = true;
                 }
                 else
                 {
-                    Vector3 dir = point[selected] - new Vector3(xSize / 3, 0, zSize / 3) - transform.position;
-                    rb.MovePosition(transform.position + (dir * Time.fixedDeltaTime * 1.2f));
-                    print(transform.position + dir);
+                    isPlayerInRange = false;
+                }
+
+                bool isAtacking = false;
+                if (Vector3.Distance(transform.position, player.position) <= 5f)
+                {
+                    animator.SetBool("Atack", true);
+                    isAtacking = true;
+                }
+
+                if (isPlayerInRange && !isAtacking)
+                {
+                    agent.SetDestination(player.position);
+                    animator.SetBool("Go", true);
+                    agent.speed = gSpeedf;
+                }
+                else
+                {
+                    if (!isAtacking)
+                        animator.SetBool("Atack", false);
+                    animator.SetBool("Go", false);
+                    agent.speed = 0;
+                }
+
+            }
+            else
+            {
+                agent.SetDestination(spawnPoint);
+                animator.SetBool("Go", true);
+                agent.speed = gSpeedf;
+                if (Vector3.Distance(transform.position, spawnPoint) <= 5f)
+                {
+                    hide = false;
+                    agent.SetDestination(player.position);
+                    animator.SetBool("Go", false);
                 }
             }
         }
-        material.SetFloat("_life", target.health);
+        if (!isGolerk)
+            material.SetFloat("_life", target.health);
 
     }
 
-    
+
     void SelectedAdd()
     {
         if (point.Length - 1 != selected)
@@ -137,9 +213,15 @@ public class Enemy : MonoBehaviour
         }
 
         SelectedAdd();
-        Destroy(gameObject,.5f);
+        Destroy(gameObject, .5f);
     }
 
+    public void Atack()
+    {
+        hide = true;
+        GameManager.instance.Damage(Force);
 
+        animator.SetBool("Atack", false);
+    }
 
 }

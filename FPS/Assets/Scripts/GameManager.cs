@@ -199,9 +199,9 @@ public class GameManager : MonoBehaviour
         {
             ShieldScreenEffect.SetActive(false);
         }
-        if (player.position.y <= -5f)
+        if (player.position.y <= -3f)
         {
-            StartCoroutine(Killer());
+            Damage(playerHealh);
         }
     }
     IEnumerator Killer()
