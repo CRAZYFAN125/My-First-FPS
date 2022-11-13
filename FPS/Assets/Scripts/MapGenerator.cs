@@ -121,20 +121,20 @@ public class MapGenerator : MonoBehaviour
             g.SetActive(true);
             Debug.Log("Special");
         }
+        fala++;
 
         if (fala % 8 == 0)
         {
             Vector3 position = new Vector3(Random.Range(-xSize / 2, xSize / 2), 1.5f, Random.Range(-zSize / 2, zSize / 2));
             Instantiate(Healer, position, Quaternion.Euler(-90, 0, 0), gameObject.transform);
         }
-        if (fala % 10 == 0)
+        if (fala % 13 == 0)
         {
             Vector3 position = new Vector3(Random.Range(-xSize / 2, xSize / 2), 2, Random.Range(-zSize / 2, zSize / 2));
             Instantiate(Golerk, position, Quaternion.identity, gameObject.transform).SetActive(true);
             print("GOLERK");
         }
 
-        fala++;
 
         print(fala + "-Fala  Reszta po podzieleniu na 5-" + /*fala % 5*/cache);
 

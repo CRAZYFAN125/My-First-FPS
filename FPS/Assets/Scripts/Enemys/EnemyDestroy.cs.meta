@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: ba538e1d6634b874099e09e5e122fdbe
+guid: 6e48d62e31d20b14e9160e8aae9e13e9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - enemy: {instanceID: 0}
-  - DeathVFX: {fileID: 2124132348862316426, guid: d53e038ecef9a38479043bb1aeeb6472, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

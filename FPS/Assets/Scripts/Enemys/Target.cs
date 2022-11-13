@@ -7,6 +7,7 @@ public class Target : MonoBehaviour
     float T = 0;
     public bool IsScore = true;
     public Enemy enemy;
+    [SerializeField] GameObject DeathVFX;
     public float MaxHealth { get; private set; }
 
     private void Start()
@@ -29,6 +30,7 @@ public class Target : MonoBehaviour
         {
             GameManager.instance.Killed += 1;
         }
+        Instantiate(DeathVFX, transform.position, Quaternion.identity,transform.parent);
         Destroy(gameObject, 0.25f);
     }
     private void FixedUpdate()
