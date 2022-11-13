@@ -32,6 +32,7 @@ Transform:
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -55,6 +56,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -130,6 +132,7 @@ MonoBehaviour:
   health: 1
   IsScore: 1
   enemy: {fileID: 0}
+  DeathVFX: {fileID: 2124132348862316426, guid: d53e038ecef9a38479043bb1aeeb6472, type: 3}
 --- !u!64 &-8093280239358038938
 MeshCollider:
   m_ObjectHideFlags: 0
